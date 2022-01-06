@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import FieldNoteIcons
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let newImage = UIImage(named: "IMG_0343.jpg")
+        Icon.Icon(name: "")
+        
     }
 
     override func didReceiveMemoryWarning() {

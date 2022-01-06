@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		71C05213D4E761C6D16F9C4B /* Pods_FieldNoteIcons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842E173A80A0A1CEFE2C8A2A /* Pods_FieldNoteIcons_Example.framework */; };
+		9DE171922787A7230029EF6A /* IMG_0343.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DE171912787A7230029EF6A /* IMG_0343.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		177236BBF56A9506B813CAA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1DD04C211265AE0287D02569 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		177236BBF56A9506B813CAA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1DD04C211265AE0287D02569 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		47DFCF1B7EBE42D120826D1C /* Pods_FieldNoteIcons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FieldNoteIcons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* FieldNoteIcons_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldNoteIcons_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +46,8 @@
 		842E173A80A0A1CEFE2C8A2A /* Pods_FieldNoteIcons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FieldNoteIcons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A640DD040D438315CB83353 /* Pods-FieldNoteIcons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FieldNoteIcons_Example.debug.xcconfig"; path = "Target Support Files/Pods-FieldNoteIcons_Example/Pods-FieldNoteIcons_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		92F9499ACD776E16F9AE3F67 /* Pods-FieldNoteIcons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FieldNoteIcons_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FieldNoteIcons_Tests/Pods-FieldNoteIcons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A57D4F92C0F938108C5E3EC8 /* FieldNoteIcons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FieldNoteIcons.podspec; path = ../FieldNoteIcons.podspec; sourceTree = "<group>"; };
+		9DE171912787A7230029EF6A /* IMG_0343.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0343.jpg; sourceTree = "<group>"; };
+		A57D4F92C0F938108C5E3EC8 /* FieldNoteIcons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FieldNoteIcons.podspec; path = ../FieldNoteIcons.podspec; sourceTree = "<group>"; };
 		B6A53D929B7980CE39E77B75 /* Pods-FieldNoteIcons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FieldNoteIcons_Tests.release.xcconfig"; path = "Target Support Files/Pods-FieldNoteIcons_Tests/Pods-FieldNoteIcons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				9DE171912787A7230029EF6A /* IMG_0343.jpg */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -147,7 +150,6 @@
 				92F9499ACD776E16F9AE3F67 /* Pods-FieldNoteIcons_Tests.debug.xcconfig */,
 				B6A53D929B7980CE39E77B75 /* Pods-FieldNoteIcons_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				9DE171922787A7230029EF6A /* IMG_0343.jpg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -291,11 +295,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FieldNoteIcons_Example/Pods-FieldNoteIcons_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/FieldNoteIcons/FieldNoteIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/SVGKit/SVGKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FieldNoteIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVGKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
