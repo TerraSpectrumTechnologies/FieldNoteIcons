@@ -1,8 +1,8 @@
 {
   "name": "FieldNoteIcons",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "A short description of FieldNoteIcons.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "Description",
   "homepage": "https://github.com/BreckClone/FieldNoteIcons",
   "license": {
     "type": "MIT",
@@ -13,12 +13,17 @@
   },
   "source": {
     "git": "https://github.com/BreckClone/FieldNoteIcons.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "FieldNoteIcons/Classes/**/*",
+  "source_files": "FieldNoteIcons/**/*",
+  "resource_bundles": {
+    "FieldNoteIcons": [
+      "FieldNoteIcons/Assets/*"
+    ]
+  },
   "dependencies": {
     "SVGKit": [
       "~> 3.0"

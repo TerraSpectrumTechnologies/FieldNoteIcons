@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let newImage = UIImage(named: "IMG_0343.jpg")
-        Icon.Icon(name: "")
+        FieldNoteIcons.FieldNoteIcon(name: "house")
         
     }
 
