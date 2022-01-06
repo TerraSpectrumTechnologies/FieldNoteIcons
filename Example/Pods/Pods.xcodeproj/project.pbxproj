@@ -609,7 +609,7 @@
 		CC6B8D98A22E7045510854E5B0A207AB /* SVGLinearGradientElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGLinearGradientElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGLinearGradientElement.m"; sourceTree = "<group>"; };
 		CFE9920E1288D9EA97EEE3F73EA38D13 /* TinySVGTextAreaElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TinySVGTextAreaElement.h; path = "Source/DOM classes/Unported or Partial DOM/TinySVGTextAreaElement.h"; sourceTree = "<group>"; };
 		CFF062D85F4ADE7F3037F9010377E31E /* SVGKImage+CGContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SVGKImage+CGContext.h"; path = "Source/Exporters/SVGKImage+CGContext.h"; sourceTree = "<group>"; };
-		D0F187A05BCD6D3D885C4995D4D35719 /* FieldNoteIcons.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FieldNoteIcons.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D0F187A05BCD6D3D885C4995D4D35719 /* FieldNoteIcons.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FieldNoteIcons.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		D25DB86F4D5F14D10CFA143359058D70 /* Element.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Element.m; path = "Source/DOM classes/Core DOM/Element.m"; sourceTree = "<group>"; };
 		D39928C8D2D7DFACED984098BE90A0CB /* Pods-FieldNoteIcons_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FieldNoteIcons_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D3F6456B110A8B79EE6AA8BBCFEE5E64 /* SVGStyleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGStyleElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGStyleElement.m"; sourceTree = "<group>"; };
@@ -789,9 +789,8 @@
 		49BE9AF39B0DE3A16ED2C8C97254B50E /* FieldNoteIcons */ = {
 			isa = PBXGroup;
 			children = (
+				9D85C7112787AE9300375A2C /* Assets */,
 				9DE1718B2787A2CB0029EF6A /* Icon.swift */,
-				9DE1718F2787A6C10029EF6A /* IMG_0518.jpg */,
-				9DE1718D2787A3C10029EF6A /* Property_Home.svg */,
 				402BBCEFB5640366CB841A909E1F15FF /* ReplaceMe.swift */,
 				F6AF844CD36C0CD8CF3B281F2BD8326C /* Pod */,
 				DD54669F7EDD82FB18106EEED9C8F81E /* Support Files */,
@@ -861,6 +860,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SVGKit";
+			sourceTree = "<group>";
+		};
+		9D85C7112787AE9300375A2C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9DE1718D2787A3C10029EF6A /* Property_Home.svg */,
+				9DE1718F2787A6C10029EF6A /* IMG_0518.jpg */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		AC145A9682FEA94707C77C70B910BA2D /* SVGKit */ = {
