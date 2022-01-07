@@ -11,12 +11,12 @@ Pod::Spec.new do |s|
   s.author           = { 'BreckClone' => 'matthollen@gmail.com' }
   s.source           = { :git => 'https://github.com/BreckClone/FieldNoteIcons.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'FieldNoteIcons/**/*'
   
    s.resource_bundles = {
-     'FieldNoteIcons' => ['FieldNoteIcons/Assets/*']
+     'FieldNoteIcons' => ['FieldNoteIcons/Assets/**/*']
    }
 
    s.dependency 'SVGKit', '~> 3.0'

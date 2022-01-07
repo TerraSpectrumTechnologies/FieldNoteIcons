@@ -186,6 +186,8 @@
 		985CE9211D0056364768B94A1457852A /* CALayerWithClipRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A68370798BE39E63A7327642F6686F /* CALayerWithClipRender.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		99B737144F029386FDD550B006FFEB72 /* SVGDescriptionElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E320E58F9E9078D8397616FAFD6C80D /* SVGDescriptionElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9D4F0681DDDBD2F5AE00F01AD4B94B0E /* SVGImageElement.h in Headers */ = {isa = PBXBuildFile; fileRef = F258AC0C00ABFCF2C3EBEA60E1305676 /* SVGImageElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D85C71C2788868300375A2C /* Icons_46x46_LightOrange_B.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D85C71B2788868300375A2C /* Icons_46x46_LightOrange_B.png */; };
+		9D85C71D2788868300375A2C /* Icons_46x46_LightOrange_B.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D85C71B2788868300375A2C /* Icons_46x46_LightOrange_B.png */; };
 		9FC13193077CDAC31E35CB8A1E707BAA /* SVGAnimatedPreserveAspectRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 97012DAE10F4F6954AC59EF9EEACB0EB /* SVGAnimatedPreserveAspectRatio.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A034FC4A8982F12C1ECE0A6C025F0042 /* SVGAngle.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D73577CB6F56776B3D4B4B511DDCC /* SVGAngle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A090403485046A3DE9DC7606E26DE31B /* SVGElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A46F3FDB225FF694ADE75052AAE1CF /* SVGElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -390,7 +392,7 @@
 		1E320E58F9E9078D8397616FAFD6C80D /* SVGDescriptionElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGDescriptionElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGDescriptionElement.m"; sourceTree = "<group>"; };
 		1E5CD4B2B45CD38B8F228DEDFA04E3E5 /* CALayerWithChildHitTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CALayerWithChildHitTest.m; path = "Source/QuartzCore additions/CALayerWithChildHitTest.m"; sourceTree = "<group>"; };
 		1EAE59EA35B8FEA3A3DD0939F9FD0FBE /* SVGPathElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGPathElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGPathElement.h"; sourceTree = "<group>"; };
-		1EC86FF06C0051792B898305AF24FA89 /* IMG_0518.jpg */ = {isa = PBXFileReference; includeInIndex = 1; path = IMG_0518.jpg; sourceTree = "<group>"; };
+		1EC86FF06C0051792B898305AF24FA89 /* IMG_0518.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; path = IMG_0518.jpg; sourceTree = "<group>"; };
 		1F3CAC66E9E86099D4A6FFDCAC640A7E /* CharacterData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CharacterData.h; path = "Source/DOM classes/Core DOM/CharacterData.h"; sourceTree = "<group>"; };
 		1F82DA79E555F4742748872EC1D5B029 /* SVGTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGTransform.m; path = "Source/DOM classes/SVG-DOM/SVGTransform.m"; sourceTree = "<group>"; };
 		1FB822AE5D0768AA7C619AD62CEAEABA /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Sources/CocoaLumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
@@ -462,7 +464,7 @@
 		574B95708AAE83B2B373ED2D04C8121C /* Comment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = "Source/DOM classes/Core DOM/Comment.h"; sourceTree = "<group>"; };
 		582604B43C38A1187218048E99684FA6 /* SVGKImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKImage.m; path = Source/SVGKImage.m; sourceTree = "<group>"; };
 		595A490E7E12B4A07D54A36EDA9060E4 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = "Sources/CocoaLumberjack/Supporting Files/DDLegacyMacros.h"; sourceTree = "<group>"; };
-		59784C5AF5D15E520B18F315C288D885 /* Property_Home.svg */ = {isa = PBXFileReference; includeInIndex = 1; path = Property_Home.svg; sourceTree = "<group>"; };
+		59784C5AF5D15E520B18F315C288D885 /* Property_Home.svg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = Property_Home.svg; sourceTree = "<group>"; };
 		5A09AB0E5411D505826CBB4B31A01A7C /* NSData+NSInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+NSInputStream.h"; path = "Source/Foundation additions/NSData+NSInputStream.h"; sourceTree = "<group>"; };
 		5A51A93223A498258960F62F2B7B9BE7 /* SVGElement_ForParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElement_ForParser.h; path = "Source/DOM classes/Unported or Partial DOM/SVGElement_ForParser.h"; sourceTree = "<group>"; };
 		5B1838C36D708353F9CB5349425D6EAE /* Pods-FieldNoteIcons_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FieldNoteIcons_Example.modulemap"; sourceTree = "<group>"; };
@@ -481,7 +483,7 @@
 		69D6A6591A9735AB4DD6AE9272DD2192 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Sources/CocoaLumberjack/DDFileLogger.m; sourceTree = "<group>"; };
 		69E62BA305F7E71061C07FE6AA00E6B8 /* Node.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Node.h; path = "Source/DOM classes/Core DOM/Node.h"; sourceTree = "<group>"; };
 		6A92D3CF8F42B62CE0F425D82745A6B9 /* NamedNodeMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NamedNodeMap.h; path = "Source/DOM classes/Core DOM/NamedNodeMap.h"; sourceTree = "<group>"; };
-		6A96AB48073F29960168235B3CA8DD65 /* FieldNoteIcons.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FieldNoteIcons.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6A96AB48073F29960168235B3CA8DD65 /* FieldNoteIcons.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FieldNoteIcons.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6AAEA250748F3C8955720C66DA80F794 /* SVGKParserDOM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserDOM.h; path = "Source/Parsers/Parser Extensions/SVGKParserDOM.h"; sourceTree = "<group>"; };
 		6ABF4399F32299AB69B55A8EE32C0433 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDLog.h; sourceTree = "<group>"; };
 		6AEA897D2438A50E7E62699731909F39 /* DOMHelperUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DOMHelperUtilities.m; path = "Source/DOM classes/Core DOM/DOMHelperUtilities.m"; sourceTree = "<group>"; };
@@ -521,7 +523,7 @@
 		8827BC87B72A8B9B130DAF6CFAD7CCC8 /* DocumentCSS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DocumentCSS.h; path = "Source/DOM classes/Core DOM/DocumentCSS.h"; sourceTree = "<group>"; };
 		88424D9223599203E26593743F018E9B /* SVGKPointsAndPathsParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKPointsAndPathsParser.h; path = Source/Parsers/SVGKPointsAndPathsParser.h; sourceTree = "<group>"; };
 		88C58725EA20FBD43DABD4C3667E0F98 /* SVGSVGElement_Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGSVGElement_Mutable.h; path = "Source/DOM classes/SVG-DOM/SVGSVGElement_Mutable.h"; sourceTree = "<group>"; };
-		894474CAE171CA122D2D2BB1AE8BD005 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		894474CAE171CA122D2D2BB1AE8BD005 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		895826CCC7A2CA6D309423D9F2730852 /* CSSPrimitiveValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSPrimitiveValue.m; path = "Source/DOM classes/Core DOM/CSSPrimitiveValue.m"; sourceTree = "<group>"; };
 		896A9965C32935D1F779290E5E828431 /* SVGAnimatedPreserveAspectRatio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGAnimatedPreserveAspectRatio.h; path = "Source/DOM classes/SVG-DOM/SVGAnimatedPreserveAspectRatio.h"; sourceTree = "<group>"; };
 		8BD118D566E0F61D2CB56C614B2D112E /* SVGEllipseElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGEllipseElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGEllipseElement.h"; sourceTree = "<group>"; };
@@ -548,13 +550,14 @@
 		9B975F2040C80DFCAB965986C16CC9FB /* SVGGElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGGElement.h; path = "Source/DOM classes/SVG-DOM/SVGGElement.h"; sourceTree = "<group>"; };
 		9CD599DDE3C461A024816048C2E8C74A /* SVGKSourceString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKSourceString.m; path = Source/Sources/SVGKSourceString.m; sourceTree = "<group>"; };
 		9D5413137C558B6D45CD01F0A6ECFB9C /* CSSStyleSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSStyleSheet.m; path = "Source/DOM classes/Core DOM/CSSStyleSheet.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D85C71B2788868300375A2C /* Icons_46x46_LightOrange_B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icons_46x46_LightOrange_B.png; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E921903354DB6918BBE69F34A30BB84 /* SVGMatrix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGMatrix.m; path = "Source/DOM classes/SVG-DOM/SVGMatrix.m"; sourceTree = "<group>"; };
 		A0FA4DD2074779EE44B49C0F44E5EB65 /* Node+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Node+Mutable.h"; path = "Source/DOM classes/Core DOM/Node+Mutable.h"; sourceTree = "<group>"; };
 		A1A68370798BE39E63A7327642F6686F /* CALayerWithClipRender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CALayerWithClipRender.m; path = "Source/QuartzCore additions/CALayerWithClipRender.m"; sourceTree = "<group>"; };
 		A208AC759DCF1A584FD917D7E076D989 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
 		A27527AD9AD48FF73BBE7CC99D024B42 /* Pods-FieldNoteIcons_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FieldNoteIcons_Example-Info.plist"; sourceTree = "<group>"; };
-		A3E7999B087D409B0EB4097F093F288A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A3E7999B087D409B0EB4097F093F288A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A55AB2C8288FB9EC5F8F22D0008D45F2 /* SVGLength.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGLength.h; path = "Source/DOM classes/SVG-DOM/SVGLength.h"; sourceTree = "<group>"; };
 		A5D426723F172ED0A05E63690AA1CC3E /* Pods-FieldNoteIcons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FieldNoteIcons_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A629FFA4F5572A8790FDD4551AB5BA8A /* SVGRadialGradientElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGRadialGradientElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGRadialGradientElement.h"; sourceTree = "<group>"; };
@@ -773,7 +776,6 @@
 				7EAA27E9858FBB0B8E80B23BF35456F6 /* Core */,
 				37324DAFB14D3260811296609B37AD1A /* Support Files */,
 			);
-			name = CocoaLumberjack;
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
@@ -879,6 +881,7 @@
 		7ECAAC17E1442DEB49C3B0D24F4405EB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				9D85C71B2788868300375A2C /* Icons_46x46_LightOrange_B.png */,
 				1EC86FF06C0051792B898305AF24FA89 /* IMG_0518.jpg */,
 				59784C5AF5D15E520B18F315C288D885 /* Property_Home.svg */,
 			);
@@ -1158,7 +1161,6 @@
 				E8BA4251E1CBB0631C5C84E0D12A1CCC /* TinySVGTextAreaElement.m */,
 				8EF4277724BA5A3F0D0FB348FC66D500 /* Support Files */,
 			);
-			name = SVGKit;
 			path = SVGKit;
 			sourceTree = "<group>";
 		};
@@ -1582,6 +1584,7 @@
 			files = (
 				E43D367ED112C9981D00F3E74CEB49D4 /* IMG_0518.jpg in Resources */,
 				3231294B84C238C7B7E97AFF681CCBB7 /* Property_Home.svg in Resources */,
+				9D85C71D2788868300375A2C /* Icons_46x46_LightOrange_B.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1597,6 +1600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				806B7CB9A4D34FA350A15EB4644A3D3A /* FieldNoteIcons-FieldNoteIcons in Resources */,
+				9D85C71C2788868300375A2C /* Icons_46x46_LightOrange_B.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1872,36 +1876,6 @@
 			};
 			name = Release;
 		};
-		20CC67719DF9C56369BB4391F0E54F0C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB6B71391078971A0DA39102542DF8FE /* FieldNoteIcons.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FieldNoteIcons/FieldNoteIcons-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons.modulemap";
-				PRODUCT_MODULE_NAME = FieldNoteIcons;
-				PRODUCT_NAME = FieldNoteIcons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2063,6 +2037,53 @@
 			};
 			name = Debug;
 		};
+		5DD08137C5C9246E8B50A41752A33BE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6B71391078971A0DA39102542DF8FE /* FieldNoteIcons.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FieldNoteIcons/FieldNoteIcons-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons.modulemap";
+				PRODUCT_MODULE_NAME = FieldNoteIcons;
+				PRODUCT_NAME = FieldNoteIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5FBB16F8251C70A467A75CCAB86D6592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6B71391078971A0DA39102542DF8FE /* FieldNoteIcons.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FieldNoteIcons";
+				IBSC_MODULE = FieldNoteIcons;
+				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/ResourceBundle-FieldNoteIcons-FieldNoteIcons-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = FieldNoteIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		6A97F30794C412B3E58A2F636C680C8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A5D426723F172ED0A05E63690AA1CC3E /* Pods-FieldNoteIcons_Example.release.xcconfig */;
@@ -2157,38 +2178,6 @@
 			};
 			name = Debug;
 		};
-		8861774923210A8391A6D1F71F9CF271 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 011A8B3427257B1443F2296E370C2D4F /* FieldNoteIcons.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FieldNoteIcons";
-				IBSC_MODULE = FieldNoteIcons;
-				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/ResourceBundle-FieldNoteIcons-FieldNoteIcons-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = FieldNoteIcons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		B09D9CC43C63EA7EF9D39B30BFE623DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB6B71391078971A0DA39102542DF8FE /* FieldNoteIcons.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FieldNoteIcons";
-				IBSC_MODULE = FieldNoteIcons;
-				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/ResourceBundle-FieldNoteIcons-FieldNoteIcons-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = FieldNoteIcons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		B4D51B6D2A5722AB6E74DA1E62CAEBB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5642D3CA4FC5FE8B367724FD615F2736 /* Pods-FieldNoteIcons_Tests.debug.xcconfig */;
@@ -2220,37 +2209,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		BF3DFA097D169F2C00819FD00E3B7730 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 011A8B3427257B1443F2296E370C2D4F /* FieldNoteIcons.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FieldNoteIcons/FieldNoteIcons-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons.modulemap";
-				PRODUCT_MODULE_NAME = FieldNoteIcons;
-				PRODUCT_NAME = FieldNoteIcons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2307,10 +2265,57 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E76D816FA080943BE623803503D7761E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011A8B3427257B1443F2296E370C2D4F /* FieldNoteIcons.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FieldNoteIcons";
+				IBSC_MODULE = FieldNoteIcons;
+				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/ResourceBundle-FieldNoteIcons-FieldNoteIcons-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = FieldNoteIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F46DF6BE26BB8F2D6ACDA5B9D0D0C467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011A8B3427257B1443F2296E370C2D4F /* FieldNoteIcons.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FieldNoteIcons/FieldNoteIcons-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons.modulemap";
+				PRODUCT_MODULE_NAME = FieldNoteIcons;
+				PRODUCT_NAME = FieldNoteIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -2320,8 +2325,8 @@
 		108ADCF56FFC8B1A865E199797B44A80 /* Build configuration list for PBXNativeTarget "FieldNoteIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20CC67719DF9C56369BB4391F0E54F0C /* Debug */,
-				BF3DFA097D169F2C00819FD00E3B7730 /* Release */,
+				5DD08137C5C9246E8B50A41752A33BE2 /* Debug */,
+				F46DF6BE26BB8F2D6ACDA5B9D0D0C467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2356,8 +2361,8 @@
 		85C59CB21247CA6B65C7EF9AE39AF1CE /* Build configuration list for PBXNativeTarget "FieldNoteIcons-FieldNoteIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B09D9CC43C63EA7EF9D39B30BFE623DC /* Debug */,
-				8861774923210A8391A6D1F71F9CF271 /* Release */,
+				5FBB16F8251C70A467A75CCAB86D6592 /* Debug */,
+				E76D816FA080943BE623803503D7761E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
