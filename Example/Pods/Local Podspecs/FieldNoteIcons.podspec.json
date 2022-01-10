@@ -2,12 +2,9 @@
   "name": "FieldNoteIcons",
   "version": "0.1.0",
   "summary": "Custom Field Note Icons.",
-  "description": "Description",
+  "description": "This library supplies custom icons as a UIImage from SVGs with primay color, secondary color, and size attributes",
   "homepage": "https://github.com/TerraSpectrumTechnologies/FieldNoteIcons",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "license": "Terra Spectrum Technologies",
   "authors": {
     "BreckClone": "matthollen@gmail.com"
   },
@@ -18,6 +15,7 @@
   "platforms": {
     "ios": "13.0"
   },
+  "swift_versions": "5.0",
   "source_files": "FieldNoteIcons/**/*",
   "resource_bundles": {
     "FieldNoteIcons": [
@@ -28,5 +26,6 @@
     "SVGKit": [
       "~> 3.0"
     ]
-  }
+  },
+  "swift_version": "5.0"
 }

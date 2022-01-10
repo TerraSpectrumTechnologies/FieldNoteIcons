@@ -2138,23 +2138,7 @@
 			};
 			name = Release;
 		};
-		BD909D79C31B02E933A73931482D4D47 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DA976CC48B8C539455D5232124C9E1F /* FieldNoteIcons.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FieldNoteIcons";
-				IBSC_MODULE = FieldNoteIcons;
-				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/ResourceBundle-FieldNoteIcons-FieldNoteIcons-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_NAME = FieldNoteIcons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		C3A67AFB1B04406CCF1A193DDB08D313 /* Debug */ = {
+		B945991784C333FEB87DFDE015EC810D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7DA976CC48B8C539455D5232124C9E1F /* FieldNoteIcons.debug.xcconfig */;
 			buildSettings = {
@@ -2178,10 +2162,26 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD909D79C31B02E933A73931482D4D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA976CC48B8C539455D5232124C9E1F /* FieldNoteIcons.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FieldNoteIcons";
+				IBSC_MODULE = FieldNoteIcons;
+				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/ResourceBundle-FieldNoteIcons-FieldNoteIcons-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = FieldNoteIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -2247,38 +2247,6 @@
 			};
 			name = Release;
 		};
-		E75AF6820DF6832C4737DF59E9811F9D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BF5A889CC8BF6EE10231F9D6229FD47 /* FieldNoteIcons.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FieldNoteIcons/FieldNoteIcons-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons.modulemap";
-				PRODUCT_MODULE_NAME = FieldNoteIcons;
-				PRODUCT_NAME = FieldNoteIcons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		F5F5D1407FEF206FB205D982AC8C32CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6B7BE0BFB43297D3370A413005B1B9C /* SVGKit.release.xcconfig */;
@@ -2310,6 +2278,38 @@
 			};
 			name = Release;
 		};
+		FAC3D6952C521F8A8E10C042CDF1F3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF5A889CC8BF6EE10231F9D6229FD47 /* FieldNoteIcons.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FieldNoteIcons/FieldNoteIcons-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FieldNoteIcons/FieldNoteIcons.modulemap";
+				PRODUCT_MODULE_NAME = FieldNoteIcons;
+				PRODUCT_NAME = FieldNoteIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2334,8 +2334,8 @@
 		5AC974ED35BA8F37CFC7ACFEF47FF212 /* Build configuration list for PBXNativeTarget "FieldNoteIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3A67AFB1B04406CCF1A193DDB08D313 /* Debug */,
-				E75AF6820DF6832C4737DF59E9811F9D /* Release */,
+				B945991784C333FEB87DFDE015EC810D /* Debug */,
+				FAC3D6952C521F8A8E10C042CDF1F3C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
