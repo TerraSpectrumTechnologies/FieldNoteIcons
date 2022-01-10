@@ -15,8 +15,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		71C05213D4E761C6D16F9C4B /* Pods_FieldNoteIcons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842E173A80A0A1CEFE2C8A2A /* Pods_FieldNoteIcons_Example.framework */; };
-		9D85C71F2788886F00375A2C /* Property_Home.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9D85C71E2788886F00375A2C /* Property_Home.svg */; };
-		9DE171922787A7230029EF6A /* IMG_0343.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DE171912787A7230029EF6A /* IMG_0343.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +45,6 @@
 		842E173A80A0A1CEFE2C8A2A /* Pods_FieldNoteIcons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FieldNoteIcons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A640DD040D438315CB83353 /* Pods-FieldNoteIcons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FieldNoteIcons_Example.debug.xcconfig"; path = "Target Support Files/Pods-FieldNoteIcons_Example/Pods-FieldNoteIcons_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		92F9499ACD776E16F9AE3F67 /* Pods-FieldNoteIcons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FieldNoteIcons_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FieldNoteIcons_Tests/Pods-FieldNoteIcons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D85C71E2788886F00375A2C /* Property_Home.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Property_Home.svg; path = ../../FieldNoteIcons/Assets/Property_Home.svg; sourceTree = "<group>"; };
-		9DE171912787A7230029EF6A /* IMG_0343.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0343.jpg; sourceTree = "<group>"; };
 		A57D4F92C0F938108C5E3EC8 /* FieldNoteIcons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FieldNoteIcons.podspec; path = ../FieldNoteIcons.podspec; sourceTree = "<group>"; };
 		B6A53D929B7980CE39E77B75 /* Pods-FieldNoteIcons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FieldNoteIcons_Tests.release.xcconfig"; path = "Target Support Files/Pods-FieldNoteIcons_Tests/Pods-FieldNoteIcons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,8 +95,6 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				9DE171912787A7230029EF6A /* IMG_0343.jpg */,
-				9D85C71E2788886F00375A2C /* Property_Home.svg */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -253,8 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				9DE171922787A7230029EF6A /* IMG_0343.jpg in Resources */,
-				9D85C71F2788886F00375A2C /* Property_Home.svg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -431,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -477,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

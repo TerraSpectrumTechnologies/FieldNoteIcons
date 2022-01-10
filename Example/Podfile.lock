@@ -2,7 +2,7 @@ PODS:
   - CocoaLumberjack (3.7.4):
     - CocoaLumberjack/Core (= 3.7.4)
   - CocoaLumberjack/Core (3.7.4)
-  - FieldNoteIcons (1.0.0):
+  - FieldNoteIcons (0.1.0):
     - SVGKit (~> 3.0)
   - SVGKit (3.0.0):
     - CocoaLumberjack (~> 3.0)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
-  FieldNoteIcons: bed453d1e2730440d0b2385096fad1b0f3e0247e
+  FieldNoteIcons: 03097b386ce0ae3200c04179082cd72378d90851
   SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
 
 PODFILE CHECKSUM: 76aa0c96fc04220fa45789ac35571a1503685dd8

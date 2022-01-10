@@ -8,6 +8,5 @@ target 'FieldNoteIcons_Example' do
   target 'FieldNoteIcons_Tests' do
     inherit! :search_paths
 
-    
   end
 end

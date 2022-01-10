@@ -11,19 +11,16 @@ import SVGKit
 public final class FieldNoteIcons {
     
     public static func Icon(name: String, size: CGSize, primaryColorHex: String, secondaryColorHex: String) -> UIImage {
-        //Troubleshooting bundle
-//        let mainBundle = Bundle.main
-//        let svgMainTest = mainBundle.url(forResource: "Property_Home", withExtension: "svg")
-//        let jpgMainTest = mainBundle.url(forResource: "IMG_0518", withExtension: "jpg")
-//        if let podBundle = Bundle(identifier: "org.cocoapods.FieldNoteIcons") {
-//        if let podBundle = Bundle(identifier: "FieldNoteIcons.bundle") {
-//            let imageTest = UIImage(named: "Icons_46x46_LightOrange_B", in: podBundle, with: nil)
-//            let svgTest = podBundle.url(forResource: "Property_Home", withExtension: "svg")
-//            let jpgTest = podBundle.url(forResource: "IMG_0518", withExtension: "jpg")
-//           print("done")
-//        }
+        let fieldNoteIconsBundle = Bundle(for: Self.self)
+        guard let resourceBundleURL = fieldNoteIconsBundle.url(forResource: "FieldNoteIcons", withExtension: "bundle") else {
+            fatalError("FieldNoteIcons.bundle not found!")
+        }
         
-        let svgImage: SVGKImage = SVGKImage(named: name)
+        guard let resourceBundle = Bundle(url: resourceBundleURL) else {
+            fatalError("Cannot access FieldNoteIcons.bundle!")
+        }
+        
+        let svgImage: SVGKImage = SVGKImage(named: name, in: resourceBundle)
         let nodeList:NodeList = svgImage.domDocument.getElementsByTagName("path")
         
         for number in 0..<(nodeList.length) {
