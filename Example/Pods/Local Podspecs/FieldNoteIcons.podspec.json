@@ -6,7 +6,7 @@
   "homepage": "https://github.com/TerraSpectrumTechnologies/FieldNoteIcons",
   "license": "Terra Spectrum Technologies",
   "authors": {
-    "BreckClone": "matthollen@gmail.com"
+    "Matt Hollen": "matthollen@gmail.com"
   },
   "source": {
     "git": "https://github.com/TerraSpectrumTechnologies/FieldNoteIcons.git",
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "SVGKit": [
-      "~> 3.0"
+      "~> 3.x"
     ]
   },
   "swift_version": "5.0"

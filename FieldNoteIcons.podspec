@@ -9,15 +9,16 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/TerraSpectrumTechnologies/FieldNoteIcons'
   s.license          = 'Terra Spectrum Technologies'
   s.author           = { 'Matt Hollen' => 'matthollen@gmail.com' }
-  s.source           = { :git => 'https://github.com/TerraSpectrumTechnologies/FieldNoteIcons.git', :tag => '0.1.0' }
+  s.source           = { :git => 'git@github.com:TerraSpectrumTechnologies/FieldNoteIcons.git', :tag => '0.1.1' }
 
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
   s.source_files     = 'FieldNoteIcons/**/*'
-  
+
    s.resource_bundles = {
      'FieldNoteIcons' => ['FieldNoteIcons/Assets/**/*']
    }
 
-   s.dependency 'SVGKit', '~> 3.0'
+   s.dependency 'SVGKit', '~> 3.x'
+#    s.dependency 'SVGKit', :git => 'git@github.com:MattHollen/SVGKit.git'
 end

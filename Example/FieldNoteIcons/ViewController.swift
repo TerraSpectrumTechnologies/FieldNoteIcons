@@ -30,7 +30,8 @@ class ViewController: UIViewController {
 
     func updateHouseColor() {
         let hexColor = colorToHexString(color: houseColor) //hexStringFromColor(color: houseColor)
-        houseImageView.image = FieldNoteIcons.Icon(name: "Property_Home", size: CGSize(width: 400, height: 400), primaryColorHex: hexColor, secondaryColorHex: hexColor)
+//        houseImageView.image = FieldNoteIcons.Icon(name: "Property_Home", size: CGSize(width: 400, height: 400), primaryColorHex: hexColor, secondaryColorHex: hexColor)
+        houseImageView.image = FieldNoteIcons.Icon(name: "Mowing", size: CGSize(width: 400, height: 400), primaryColorHex: hexColor, secondaryColorHex: hexColor)
     }
     
     @IBAction func goButtonTapped(_ sender: Any) {

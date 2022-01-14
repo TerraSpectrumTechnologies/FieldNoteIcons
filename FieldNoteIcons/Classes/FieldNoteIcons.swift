@@ -20,6 +20,8 @@ public final class FieldNoteIcons {
             fatalError("Cannot access FieldNoteIcons.bundle!")
         }
         
+        let fileURL = resourceBundle.url(forResource: name, withExtension: "svg")
+        
         let svgImage: SVGKImage = SVGKImage(named: name, in: resourceBundle)
         let nodeList:NodeList = svgImage.domDocument.getElementsByTagName("path")
         
