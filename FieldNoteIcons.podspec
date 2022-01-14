@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FieldNoteIcons'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Custom Field Note Icons.'
 
   s.description      = 'This library supplies custom icons as a UIImage from SVGs with primay color, secondary color, and size attributes'
