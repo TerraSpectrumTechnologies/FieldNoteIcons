@@ -22,7 +22,7 @@ pod 'FieldNoteIcons'
 
 ## Author
 
-BreckClone, matthollen@gmail.com
+Matt Hollen, mhollen@TerraSpectrum.com
 
 ## License
 
