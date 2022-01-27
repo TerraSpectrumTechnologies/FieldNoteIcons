@@ -19,19 +19,46 @@ class ViewController: UIViewController {
     @IBOutlet weak var customHexTextField: UITextField!
     @IBOutlet weak var customTextGoButton: UIButton!
     @IBOutlet weak var houseImageView: UIImageView!
+    @IBOutlet weak var showPinSwitch: UISwitch!
     
     var houseColor = UIColor.black
+    var images: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let icons = FieldNoteIcons.IconList()
+        
+        for icon in icons {
+            let primaryHexColor = colorToHexString(color: houseColor)
+            let whiteHex = colorToHexString(color: UIColor.white)
+            if showPinSwitch.isOn {
+                if let iconImage = FieldNoteIcons.PinIcon(name: icon, size: houseImageView.frame.size, primaryColorHex: primaryHexColor, secondaryColorHex: primaryHexColor, tertiaryColorHex: primaryHexColor, pinFillColorHex: whiteHex) {
+                    images.append(iconImage)
+                }
+            } else {
+                if let iconImage = FieldNoteIcons.Icon(name: icon, size: CGSize(width: 400, height: 400), primaryColorHex: primaryHexColor, secondaryColorHex: primaryHexColor, tertiaryColorHex: primaryHexColor, pinFillColorHex: whiteHex) {
+                    images.append(iconImage)
+                }
+            }
+        }
+        
+
+        
+        houseImageView.layer.borderWidth = 1
+        houseImageView.layer.borderColor = UIColor.gray.cgColor
         updateHouseColor()
     }
 
     func updateHouseColor() {
-        let hexColor = colorToHexString(color: houseColor) //hexStringFromColor(color: houseColor)
-//        houseImageView.image = FieldNoteIcons.Icon(name: "Property_Home", size: CGSize(width: 400, height: 400), primaryColorHex: hexColor, secondaryColorHex: hexColor)
-        houseImageView.image = FieldNoteIcons.Icon(name: "Mowing", size: CGSize(width: 400, height: 400), primaryColorHex: hexColor, secondaryColorHex: hexColor)
+        let primaryHexColor = colorToHexString(color: houseColor)
+        let whiteHex = colorToHexString(color: UIColor.white)
+        let imageName = "Clock with calendar"
+        if showPinSwitch.isOn {
+            houseImageView.image = FieldNoteIcons.PinIcon(name: imageName, size: houseImageView.frame.size, primaryColorHex: primaryHexColor, secondaryColorHex: primaryHexColor, tertiaryColorHex: primaryHexColor, pinFillColorHex: whiteHex)
+        } else {
+            houseImageView.image = FieldNoteIcons.Icon(name: imageName, size: CGSize(width: 400, height: 400), primaryColorHex: primaryHexColor, secondaryColorHex: primaryHexColor, tertiaryColorHex: primaryHexColor, pinFillColorHex: whiteHex)
+        }
     }
     
     @IBAction func goButtonTapped(_ sender: Any) {
@@ -67,6 +94,10 @@ class ViewController: UIViewController {
         self.present(picker, animated: true, completion: nil)
     }
     
+    @IBAction func pinSwitchedToggled(_ sender: Any) {
+        updateHouseColor()
+    }
+    
     func colorToHexString(color: UIColor) -> String {
         var red: CGFloat = 0.0
         var green: CGFloat = 0.0
@@ -81,7 +112,6 @@ class ViewController: UIViewController {
         var colorString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
         colorString = colorString.replacingOccurrences(of: "#", with: "").uppercased()
 
-        print(colorString)
         let alpha: CGFloat = 1.0
         let red: CGFloat = self.colorComponentFrom(colorString: colorString, start: 0, length: 2)
         let green: CGFloat = self.colorComponentFrom(colorString: colorString, start: 2, length: 2)
@@ -104,7 +134,7 @@ class ViewController: UIViewController {
         }
         let hexFloat: CGFloat = CGFloat(hexComponent)
         let floatValue: CGFloat = CGFloat(hexFloat / 255.0)
-        print(floatValue)
+
         return floatValue
     }
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+	 <style type="text/css">
+	     .primary{fill:#000000;}
+	     .pinFill{fill:#FFFFFF;}
+	 </style>
+	 <g>
+	 	<path id="pin" class="primary" d="M169.2,79.8c0-38.2-31-69.2-69.2-69.2s-69.2,31-69.2,69.2c0,14.1,4.3,27.3,11.5,38.2h0l0.1,0.2
+	 		c1.6,2.4,3.3,4.6,5.2,6.8l52.4,68.2l52.4-68.2c1.9-2.2,3.6-4.4,5.2-6.8l0.1-0.2h0C165,107.1,169.2,94,169.2,79.8L169.2,79.8z"/>
+	 	<path id="pinFill" class="pinFill" d="M100,143.5c-34.6,0-62.7-28.1-62.7-62.7S65.4,18.1,100,18.1s62.7,28.1,62.7,62.7
+	 		S134.6,143.5,100,143.5L100,143.5z"/>
+	 </g>
+<path id="path2" class="primary" d="M118.9,80l2.4,5.9l-2.7,4.6l5.1,3.7l-5.1,6.4l-8-3.8l-9.4,3.7l-8.3-3.8l-10.2,1.6l2.1-6.2l-4.3-4.6l4.3-3.9L83,80H41.7
+	c0,32,25.9,57.9,57.9,57.9c32,0,57.9-25.9,57.9-57.9H118.9z M97.8,105.7h4l2.2,6.4h-8.1L97.8,105.7z M91.3,131.4l4.2-12.9h8.4
+	l4.5,12.9H91.3z"/>
+</svg>
