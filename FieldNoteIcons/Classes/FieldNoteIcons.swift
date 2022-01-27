@@ -14,6 +14,11 @@ public final class FieldNoteIcons {
     
     private static let nodeTypes: [String] = ["path","polygon","circle","ellipse","rect","polyline"]
     
+    /**
+    Gets a list of all available icon images
+
+    - Returns: A list of all available images by name
+    */
     
     public static func IconList() -> [String] {
         var iconList:[String] = []
@@ -32,8 +37,7 @@ public final class FieldNoteIcons {
                     if !iconList.contains(where: { name in
                         name == cleanedIconName
                     }) {
-                        iconList.append(iconName)
-                    } else {
+                        iconList.append(cleanedIconName)
                     }
                     
                 }
@@ -86,13 +90,6 @@ public final class FieldNoteIcons {
         guard let resourceBundle = Bundle(url: resourceBundleURL) else {
             fatalError("Cannot access FieldNoteIcons.bundle!")
         }
-        do {
-            let contents = try FileManager.default.contentsOfDirectory(at: resourceBundleURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
-            print(contents.count)
-        } catch {
-            print(error)
-        }
-        
         
         var matchingSVGName = ""
         
@@ -172,7 +169,6 @@ public final class FieldNoteIcons {
         var colorString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
         colorString = colorString.replacingOccurrences(of: "#", with: "").uppercased()
 
-        print(colorString)
         let alpha: CGFloat = 1.0
         let red: CGFloat = self.colorComponentFrom(colorString: colorString, start: 0, length: 2)
         let green: CGFloat = self.colorComponentFrom(colorString: colorString, start: 2, length: 2)
@@ -195,7 +191,6 @@ public final class FieldNoteIcons {
         }
         let hexFloat: CGFloat = CGFloat(hexComponent)
         let floatValue: CGFloat = CGFloat(hexFloat / 255.0)
-        print(floatValue)
         return floatValue
     }
 }

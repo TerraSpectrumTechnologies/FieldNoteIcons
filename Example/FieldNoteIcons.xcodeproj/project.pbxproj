@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		71C05213D4E761C6D16F9C4B /* Pods_FieldNoteIcons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842E173A80A0A1CEFE2C8A2A /* Pods_FieldNoteIcons_Example.framework */; };
+		9DB8653C27A2313200641C8A /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8653A27A2313200641C8A /* ImageCollectionViewCell.swift */; };
+		9DB8653D27A2313200641C8A /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8653B27A2313200641C8A /* ImageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		842E173A80A0A1CEFE2C8A2A /* Pods_FieldNoteIcons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FieldNoteIcons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A640DD040D438315CB83353 /* Pods-FieldNoteIcons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FieldNoteIcons_Example.debug.xcconfig"; path = "Target Support Files/Pods-FieldNoteIcons_Example/Pods-FieldNoteIcons_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		92F9499ACD776E16F9AE3F67 /* Pods-FieldNoteIcons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FieldNoteIcons_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FieldNoteIcons_Tests/Pods-FieldNoteIcons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DB8653A27A2313200641C8A /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		9DB8653B27A2313200641C8A /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		A57D4F92C0F938108C5E3EC8 /* FieldNoteIcons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FieldNoteIcons.podspec; path = ../FieldNoteIcons.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B6A53D929B7980CE39E77B75 /* Pods-FieldNoteIcons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FieldNoteIcons_Tests.release.xcconfig"; path = "Target Support Files/Pods-FieldNoteIcons_Tests/Pods-FieldNoteIcons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +103,8 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				9DB8653A27A2313200641C8A /* ImageCollectionViewCell.swift */,
+				9DB8653B27A2313200641C8A /* ImageCollectionViewCell.xib */,
 			);
 			name = "Example for FieldNoteIcons";
 			path = FieldNoteIcons;
@@ -249,6 +255,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				9DB8653D27A2313200641C8A /* ImageCollectionViewCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB8653C27A2313200641C8A /* ImageCollectionViewCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

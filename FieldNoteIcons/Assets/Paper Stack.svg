@@ -4,16 +4,16 @@
 	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <g>
 	<g>
-		<polygon id="polygon1" points="188.8,102.2 11.5,102.2 63.6,31.1 136.7,31.1 		"/>
+		<polygon id="polygon1" class="primary" points="188.8,102.2 11.5,102.2 63.6,31.1 136.7,31.1 		"/>
 	</g>
 	<g>
-		<rect id="rect1" x="11.5" y="116.4" width="177.5" height="10.4"/>
+		<rect id="rect1" class="primary" x="11.5" y="116.4" width="177.5" height="10.4"/>
 	</g>
 	<g>
-		<rect id="rect2" x="11.5" y="135.9" width="177.5" height="10.4"/>
+		<rect id="rect2" class="primary" x="11.5" y="135.9" width="177.5" height="10.4"/>
 	</g>
 	<g>
-		<rect id="path2" x="11.5" y="155.3" width="177.5" height="10.4"/>
+		<rect id="path2" class="primary" x="11.5" y="155.3" width="177.5" height="10.4"/>
 	</g>
 </g>
 </svg>

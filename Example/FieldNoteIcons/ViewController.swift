@@ -9,8 +9,13 @@
 import UIKit
 import FieldNoteIcons
 
-class ViewController: UIViewController {
+struct IconImage {
+    var image: UIImage
+    var name: String
+}
 
+
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var orangeButton: UIButton!
     @IBOutlet weak var greenButton: UIButton!
     @IBOutlet weak var blueButton: UIButton!
@@ -18,71 +23,76 @@ class ViewController: UIViewController {
     @IBOutlet weak var blackButton: UIButton!
     @IBOutlet weak var customHexTextField: UITextField!
     @IBOutlet weak var customTextGoButton: UIButton!
-    @IBOutlet weak var houseImageView: UIImageView!
     @IBOutlet weak var showPinSwitch: UISwitch!
+    @IBOutlet weak var imageCollectionView: UICollectionView!
     
     var houseColor = UIColor.black
-    var images: [UIImage] = []
+    var iconImages: [IconImage] = []
+    let iconsNames = FieldNoteIcons.IconList().sorted()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let icons = FieldNoteIcons.IconList()
+        imageCollectionView.register(UINib(nibName: "ImageCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "ImageCollectionViewCell")
         
-        for icon in icons {
+        setupCollectionView()
+        refreshIconImages()
+    }
+    
+    func setupCollectionView() {
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.itemSize = CGSize(width: 100, height: 120)
+        flowLayout.scrollDirection = .vertical
+        imageCollectionView.collectionViewLayout = flowLayout
+        imageCollectionView.dataSource = self
+        imageCollectionView.delegate = self
+        imageCollectionView.allowsSelection = false
+    }
+    
+    func refreshIconImages() {
+        iconImages.removeAll()
+        for iconName in iconsNames {
             let primaryHexColor = colorToHexString(color: houseColor)
             let whiteHex = colorToHexString(color: UIColor.white)
             if showPinSwitch.isOn {
-                if let iconImage = FieldNoteIcons.PinIcon(name: icon, size: houseImageView.frame.size, primaryColorHex: primaryHexColor, secondaryColorHex: primaryHexColor, tertiaryColorHex: primaryHexColor, pinFillColorHex: whiteHex) {
-                    images.append(iconImage)
+                if let iconImage = FieldNoteIcons.PinIcon(name: iconName, size: CGSize(width: 100, height: 100), primaryColorHex: primaryHexColor, secondaryColorHex: whiteHex, tertiaryColorHex: whiteHex, pinFillColorHex: whiteHex) {
+                    iconImages.append(IconImage(image: iconImage, name: iconName))
                 }
             } else {
-                if let iconImage = FieldNoteIcons.Icon(name: icon, size: CGSize(width: 400, height: 400), primaryColorHex: primaryHexColor, secondaryColorHex: primaryHexColor, tertiaryColorHex: primaryHexColor, pinFillColorHex: whiteHex) {
-                    images.append(iconImage)
+                if let iconImage = FieldNoteIcons.Icon(name: iconName, size: CGSize(width: 100, height: 100), primaryColorHex: primaryHexColor, secondaryColorHex: whiteHex, tertiaryColorHex: whiteHex, pinFillColorHex: whiteHex) {
+                    iconImages.append(IconImage(image: iconImage, name: iconName))
                 }
             }
         }
-        
-
-        
-        houseImageView.layer.borderWidth = 1
-        houseImageView.layer.borderColor = UIColor.gray.cgColor
-        updateHouseColor()
     }
-
-    func updateHouseColor() {
-        let primaryHexColor = colorToHexString(color: houseColor)
-        let whiteHex = colorToHexString(color: UIColor.white)
-        let imageName = "Clock with calendar"
-        if showPinSwitch.isOn {
-            houseImageView.image = FieldNoteIcons.PinIcon(name: imageName, size: houseImageView.frame.size, primaryColorHex: primaryHexColor, secondaryColorHex: primaryHexColor, tertiaryColorHex: primaryHexColor, pinFillColorHex: whiteHex)
-        } else {
-            houseImageView.image = FieldNoteIcons.Icon(name: imageName, size: CGSize(width: 400, height: 400), primaryColorHex: primaryHexColor, secondaryColorHex: primaryHexColor, tertiaryColorHex: primaryHexColor, pinFillColorHex: whiteHex)
-        }
+    
+    func updateImageCells() {
+        refreshIconImages()
+        imageCollectionView.reloadData()
     }
     
     @IBAction func goButtonTapped(_ sender: Any) {
         houseColor = colorWithHexString(hexString: customHexTextField.text ?? "000000")
-        updateHouseColor()
+        updateImageCells()
     }
     
     @IBAction func colorButtonTapped(_ sender: UIButton) {
         switch sender {
         case orangeButton :
             houseColor = .orange
-            updateHouseColor()
+            updateImageCells()
         case greenButton :
             houseColor = .green
-            updateHouseColor()
+            updateImageCells()
         case blueButton :
             houseColor = .blue
-            updateHouseColor()
+            updateImageCells()
         case redButton :
             houseColor = .red
-            updateHouseColor()
+            updateImageCells()
         default:
             houseColor = .black
-            updateHouseColor()
+            updateImageCells()
         }
     }
     @IBAction func colorPickerButtonTapped(_ sender: Any) {
@@ -95,7 +105,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pinSwitchedToggled(_ sender: Any) {
-        updateHouseColor()
+        updateImageCells()
     }
     
     func colorToHexString(color: UIColor) -> String {
@@ -137,21 +147,41 @@ class ViewController: UIViewController {
 
         return floatValue
     }
-
+    
+    //MARK: - Collection View
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return iconImages.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath as IndexPath) as! ImageCollectionViewCell
+        
+        let iconImage = iconImages[indexPath.row]
+        cell.imageView.image = iconImage.image
+        cell.imageNameLabel.text = iconImage.name
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 120)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 16
+    }
 }
 
 extension ViewController: UIColorPickerViewControllerDelegate {
-    
-    //  Called once you have finished picking the color.
     func colorPickerViewControllerDidFinish(_ viewController: UIColorPickerViewController) {
         houseColor = viewController.selectedColor
-        updateHouseColor()
+        updateImageCells()
     }
     
-    //  Called on every color selection done in the picker.
     func colorPickerViewControllerDidSelectColor(_ viewController: UIColorPickerViewController) {
             houseColor = viewController.selectedColor
-        updateHouseColor()
+        updateImageCells()
     }
 }
 

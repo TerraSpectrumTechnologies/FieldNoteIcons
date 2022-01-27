@@ -287,8 +287,6 @@
 		9DB8640527A205FF00641C8A /* Claim.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863FE27A205FE00641C8A /* Claim.svg */; };
 		9DB8640627A205FF00641C8A /* Checklist.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863FF27A205FF00641C8A /* Checklist.svg */; };
 		9DB8640727A205FF00641C8A /* Checklist.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863FF27A205FF00641C8A /* Checklist.svg */; };
-		9DB8640827A205FF00641C8A /* Checkmarksvg.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8640027A205FF00641C8A /* Checkmarksvg.svg */; };
-		9DB8640927A205FF00641C8A /* Checkmarksvg.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8640027A205FF00641C8A /* Checkmarksvg.svg */; };
 		9DB8640A27A205FF00641C8A /* Chainsaw.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8640127A205FF00641C8A /* Chainsaw.svg */; };
 		9DB8640B27A205FF00641C8A /* Chainsaw.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8640127A205FF00641C8A /* Chainsaw.svg */; };
 		9DB8640C27A205FF00641C8A /* Cancel.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8640227A205FF00641C8A /* Cancel.svg */; };
@@ -749,6 +747,8 @@
 		9DF920B4279F486800A60661 /* 2.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF920B2279F486800A60661 /* 2.svg */; };
 		9DF920B627A06A6600A60661 /* Access Road.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF920B527A06A6600A60661 /* Access Road.svg */; };
 		9DF920B727A06A6600A60661 /* Access Road.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF920B527A06A6600A60661 /* Access Road.svg */; };
+		9DFCD27F27A3380500F6A5DD /* Checkmark.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD27E27A3380500F6A5DD /* Checkmark.svg */; };
+		9DFCD28027A3380500F6A5DD /* Checkmark.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD27E27A3380500F6A5DD /* Checkmark.svg */; };
 		9FC13193077CDAC31E35CB8A1E707BAA /* SVGAnimatedPreserveAspectRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 97012DAE10F4F6954AC59EF9EEACB0EB /* SVGAnimatedPreserveAspectRatio.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A034FC4A8982F12C1ECE0A6C025F0042 /* SVGAngle.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D73577CB6F56776B3D4B4B511DDCC /* SVGAngle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A090403485046A3DE9DC7606E26DE31B /* SVGElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A46F3FDB225FF694ADE75052AAE1CF /* SVGElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1160,7 +1160,6 @@
 		9DB863F127A205DA00641C8A /* Broken Pipe.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Broken Pipe.svg"; sourceTree = "<group>"; };
 		9DB863FE27A205FE00641C8A /* Claim.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Claim.svg; sourceTree = "<group>"; };
 		9DB863FF27A205FF00641C8A /* Checklist.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Checklist.svg; sourceTree = "<group>"; };
-		9DB8640027A205FF00641C8A /* Checkmarksvg.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Checkmarksvg.svg; sourceTree = "<group>"; };
 		9DB8640127A205FF00641C8A /* Chainsaw.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Chainsaw.svg; sourceTree = "<group>"; };
 		9DB8640227A205FF00641C8A /* Cancel.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Cancel.svg; sourceTree = "<group>"; };
 		9DB8640327A205FF00641C8A /* Circle Slash.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Circle Slash.svg"; sourceTree = "<group>"; };
@@ -1391,6 +1390,7 @@
 		9DF91FB5279F452300A60661 /* Pin_Tree.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Pin_Tree.svg; sourceTree = "<group>"; };
 		9DF920B2279F486800A60661 /* 2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2.svg; sourceTree = "<group>"; };
 		9DF920B527A06A6600A60661 /* Access Road.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Access Road.svg"; sourceTree = "<group>"; };
+		9DFCD27E27A3380500F6A5DD /* Checkmark.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Checkmark.svg; sourceTree = "<group>"; };
 		9E921903354DB6918BBE69F34A30BB84 /* SVGMatrix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGMatrix.m; path = "Source/DOM classes/SVG-DOM/SVGMatrix.m"; sourceTree = "<group>"; };
 		A0FA4DD2074779EE44B49C0F44E5EB65 /* Node+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Node+Mutable.h"; path = "Source/DOM classes/Core DOM/Node+Mutable.h"; sourceTree = "<group>"; };
 		A1A68370798BE39E63A7327642F6686F /* CALayerWithClipRender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CALayerWithClipRender.m; path = "Source/QuartzCore additions/CALayerWithClipRender.m"; sourceTree = "<group>"; };
@@ -1779,7 +1779,7 @@
 				9DB8640227A205FF00641C8A /* Cancel.svg */,
 				9DB8640127A205FF00641C8A /* Chainsaw.svg */,
 				9DB863FF27A205FF00641C8A /* Checklist.svg */,
-				9DB8640027A205FF00641C8A /* Checkmarksvg.svg */,
+				9DFCD27E27A3380500F6A5DD /* Checkmark.svg */,
 				9DB8640327A205FF00641C8A /* Circle Slash.svg */,
 				9DB863FE27A205FE00641C8A /* Claim.svg */,
 				9DB26710279A1FF000ED6309 /* Clipboard.svg */,
@@ -2771,7 +2771,6 @@
 				9DF92083279F452300A60661 /* Pin_Broken Sprinkler Head.svg in Resources */,
 				9DF92099279F452300A60661 /* Pin_Road Damage.svg in Resources */,
 				9DB8643327A2064600641C8A /* Drone.svg in Resources */,
-				9DB8640927A205FF00641C8A /* Checkmarksvg.svg in Resources */,
 				9DB864D327A2072E00641C8A /* Safety Audit.svg in Resources */,
 				9DB864B527A2072E00641C8A /* Rope.svg in Resources */,
 				9DF920AD279F452300A60661 /* Pin_Tractor.svg in Resources */,
@@ -2837,6 +2836,7 @@
 				9DF9201B279F452300A60661 /* Pin_Property Commercial.svg in Resources */,
 				9DB8643127A2064600641C8A /* Driving.svg in Resources */,
 				9DF92025279F452300A60661 /* Pin_Swamp.svg in Resources */,
+				9DFCD28027A3380500F6A5DD /* Checkmark.svg in Resources */,
 				9DB864CB27A2072E00641C8A /* Save.svg in Resources */,
 				9DF92011279F452300A60661 /* Pin_Trash Can.svg in Resources */,
 				9DB8653027A207A400641C8A /* Work Groupsvg.svg in Resources */,
@@ -3061,7 +3061,6 @@
 				9DF92082279F452300A60661 /* Pin_Broken Sprinkler Head.svg in Resources */,
 				9DF92098279F452300A60661 /* Pin_Road Damage.svg in Resources */,
 				9DB8643227A2064600641C8A /* Drone.svg in Resources */,
-				9DB8640827A205FF00641C8A /* Checkmarksvg.svg in Resources */,
 				9DB864D227A2072E00641C8A /* Safety Audit.svg in Resources */,
 				9DB864B427A2072E00641C8A /* Rope.svg in Resources */,
 				9DF920AC279F452300A60661 /* Pin_Tractor.svg in Resources */,
@@ -3127,6 +3126,7 @@
 				9DF9201A279F452300A60661 /* Pin_Property Commercial.svg in Resources */,
 				9DB8643027A2064600641C8A /* Driving.svg in Resources */,
 				9DF92024279F452300A60661 /* Pin_Swamp.svg in Resources */,
+				9DFCD27F27A3380500F6A5DD /* Checkmark.svg in Resources */,
 				9DB864CA27A2072E00641C8A /* Save.svg in Resources */,
 				9DF92010279F452300A60661 /* Pin_Trash Can.svg in Resources */,
 				9DB8652F27A207A400641C8A /* Work Groupsvg.svg in Resources */,

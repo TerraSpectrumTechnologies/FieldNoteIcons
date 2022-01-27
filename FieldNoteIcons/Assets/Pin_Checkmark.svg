@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
-<style type="text/css">
-	.primary{fill:none;stroke:#000000;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.secondary{fill:#000000;}
-	.pinFill{fill:#FFFFFF;}
-</style>
+	 <style type="text/css">
+	     .primary{fill:#000000;}
+	     .pinFill{fill:#FFFFFF;}
+	 </style>
 <g>
- <path id="pin" class="secondary" d="M169.2,79.8c0-38.2-31-69.2-69.2-69.2s-69.2,31-69.2,69.2c0,14.1,4.3,27.3,11.5,38.2h0l0.1,0.2
-	 c1.6,2.4,3.3,4.6,5.2,6.8l52.4,68.2l52.4-68.2c1.9-2.2,3.6-4.4,5.2-6.8l0.1-0.2h0C165,107.1,169.2,94,169.2,79.8L169.2,79.8z"/>
- <path id="pinFill" class="pinFill" d="M100,143.5c-34.6,0-62.7-28.1-62.7-62.7S65.4,18.1,100,18.1s62.7,28.1,62.7,62.7
-	 S134.6,143.5,100,143.5L100,143.5z"/>
+	<path id="pin" class="primary" d="M169.2,79.8c0-38.2-31-69.2-69.2-69.2s-69.2,31-69.2,69.2c0,14.1,4.3,27.3,11.5,38.2l0,0l0.1,0.2
+		c1.6,2.4,3.3,4.6,5.2,6.8l52.4,68.2l52.4-68.2c1.9-2.2,3.6-4.4,5.2-6.8l0.1-0.2l0,0C165,107.1,169.2,94,169.2,79.8L169.2,79.8z"/>
+	<path id="pinFill" class="pinFill" d="M100,143.5c-34.6,0-62.7-28.1-62.7-62.7S65.4,18.1,100,18.1s62.7,28.1,62.7,62.7
+		S134.6,143.5,100,143.5L100,143.5z"/>
 </g>
-<polyline class="primary" points="63.62,83.9 86.55,105.15 136.38,58.17 "/>
+
+<g>
+	<path id="path1" class="primary"  d="M92.3,104.4c-2.3,2.3-6.2,2.5-8.7,0.3L62.5,86.2C60,84,59.8,80.3,62.2,78l0,0c2.3-2.3,6.2-2.5,8.7-0.3L92,96.2
+			C94.5,98.4,94.6,102.1,92.3,104.4L92.3,104.4z"/>
+	<path id="path2" class="primary"  d="M135,51.3c-2.4-2.2-6.2-2-8.5,0.4L83.8,96.6c-2.3,2.4-2.2,6.1,0.2,8.3s6.2,2,8.5-0.4l42.7-44.9
+				C137.5,57.2,137.4,53.5,135,51.3z"/>
+</g>
 </svg>
