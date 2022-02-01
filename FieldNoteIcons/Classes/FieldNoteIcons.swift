@@ -12,7 +12,7 @@ import UIKit
 /// Field Note Icons
 public final class FieldNoteIcons {
     
-    private static let nodeTypes: [String] = ["path","polygon","circle","ellipse","rect","polyline"]
+    private static let nodeTypes: [String] = ["path","rect","line","polygon","polyline","circle","ellipse"]
     
     /**
     Gets a list of all available icon images
@@ -30,7 +30,6 @@ public final class FieldNoteIcons {
         do {
             let contents = try FileManager.default.contentsOfDirectory(at: resourceBundleURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
             for content in contents {
-                
                 let iconPathSplit = content.pathComponents.split(separator: "/").last
                 if let iconName = iconPathSplit?.last?.replacingOccurrences(of: ".svg", with: "") {
                     let cleanedIconName = iconName.replacingOccurrences(of: "Pin_", with: "")
@@ -64,7 +63,25 @@ public final class FieldNoteIcons {
      */
     
     public static func PinIcon(name: String, size: CGSize, primaryColorHex: String, secondaryColorHex: String, tertiaryColorHex: String, pinFillColorHex: String) -> UIImage? {
-        return Icon(name: "Pin_" + name, size: size, primaryColorHex: primaryColorHex, secondaryColorHex: secondaryColorHex, tertiaryColorHex: tertiaryColorHex, pinFillColorHex: pinFillColorHex)
+        return Icon(name: "pin_" + name, size: size, primaryColorHex: primaryColorHex, secondaryColorHex: secondaryColorHex, tertiaryColorHex: tertiaryColorHex, pinFillColorHex: pinFillColorHex)
+    }
+    
+    /**
+     Gets a SVG Pin Icon Image
+
+     - Parameters:
+        - name: The name of the icon
+        - size: The requested size of the image
+        - primaryColorHex: The primary color
+        - secondaryColorHex: The secondary color
+        - tertiaryColorHex: The tertiary color
+        - pinFillColorHex: The pin background fill color
+
+     - Returns: A UIImage for the requested icon
+     */
+    
+    public static func PinIcon(name: String, size: CGSize, primaryColor: UIColor, secondaryColor: UIColor, tertiaryColor: UIColor, pinFillColor: UIColor) -> UIImage? {
+        return Icon(name: "pin_" + name, size: size, primaryColor: primaryColor, secondaryColor: secondaryColor, tertiaryColor: tertiaryColor, pinFillColor: pinFillColor)
     }
     
     /**
@@ -82,6 +99,24 @@ public final class FieldNoteIcons {
      */
     
     public static func Icon(name: String, size: CGSize, primaryColorHex: String, secondaryColorHex: String, tertiaryColorHex: String, pinFillColorHex: String = "000000") -> UIImage? {
+        return self.Icon(name: name, size: size, primaryColor: colorWithHexString(hexString: primaryColorHex), secondaryColor: colorWithHexString(hexString: secondaryColorHex), tertiaryColor: colorWithHexString(hexString: tertiaryColorHex), pinFillColor: colorWithHexString(hexString: pinFillColorHex))
+    }
+    
+    /**
+     Gets a SVG Icon Image
+
+     - Parameters:
+        - name: The name of the icon
+        - size: The requested size of the image
+        - primaryColorHex: The primary color
+        - secondaryColorHex: The secondary color
+        - tertiaryColorHex: The tertiary color
+        - pinFillColorHex: The pin background fill color
+
+     - Returns: A UIImage for the requested icon
+     */
+    
+    public static func Icon(name: String, size: CGSize, primaryColor: UIColor, secondaryColor: UIColor, tertiaryColor: UIColor, pinFillColor: UIColor = .white) -> UIImage? {
         let fieldNoteIconsBundle = Bundle(for: Self.self)
         guard let resourceBundleURL = fieldNoteIconsBundle.url(forResource: "FieldNoteIcons", withExtension: "bundle") else {
             fatalError("FieldNoteIcons.bundle not found!")
@@ -91,29 +126,16 @@ public final class FieldNoteIcons {
             fatalError("Cannot access FieldNoteIcons.bundle!")
         }
         
-        let iconList = self.IconList()
-        var matchingSVGName = ""
-        
-        if iconList.contains(name.lowercased()) {
-            matchingSVGName = name.lowercased()
-        } else {
-            return nil
+        let fileName = name.lowercased()
+        var fileExists = false
+        do {
+            let resourcePath = resourceBundle.url(forResource: fileName, withExtension: "svg")
+            fileExists = try resourcePath?.checkResourceIsReachable() ?? false
+        } catch {
+            print(error)
         }
         
-        //TODO: Figure out why this doesn't work.
-//        if fieldNoteIconsBundle.path(forResource: name, ofType: "svg") != nil {
-//            matchingSVGName = name
-//        } else if fieldNoteIconsBundle.path(forResource: name.lowercased(), ofType: "svg") != nil {
-//            matchingSVGName = name.lowercased()
-//        } else if fieldNoteIconsBundle.path(forResource: name.capitalized, ofType: "svg") != nil {
-//            matchingSVGName = name.capitalized
-//        } else if fieldNoteIconsBundle.path(forResource: name.uppercased(), ofType: "svg") != nil {
-//            matchingSVGName = name.uppercased()
-//        } else {
-//            return nil
-//        }
-            
-        guard let svgImage = SVGKImage(named: matchingSVGName, in: resourceBundle) else {
+        guard fileExists, let svgImage = SVGKImage(named: fileName, in: resourceBundle) else {
             return nil
         }
 
@@ -128,30 +150,30 @@ public final class FieldNoteIcons {
         }
         
         for nodeList in nodeListArray {
-            fillElementNodeList(nodeList: nodeList, svgImage: svgImage, primaryColorHex: primaryColorHex, secondaryColorHex: secondaryColorHex, tertiaryColorHex: tertiaryColorHex, pinFillColorHex: pinFillColorHex)
+            fillElementNodeList(nodeList: nodeList, svgImage: svgImage, primaryColor: primaryColor, secondaryColor: secondaryColor, tertiaryColor: tertiaryColor, pinFillColor: pinFillColor)
         }
         
         return svgImage.uiImage
     }
     
-    private static func fillElementNodeList(nodeList: NodeList, svgImage: SVGKImage, primaryColorHex: String, secondaryColorHex: String, tertiaryColorHex: String, pinFillColorHex: String) {
+    private static func fillElementNodeList(nodeList: NodeList, svgImage: SVGKImage, primaryColor: UIColor, secondaryColor: UIColor, tertiaryColor: UIColor, pinFillColor: UIColor) {
         for number in 0..<(nodeList.length) {
             if let nodeElement = nodeList.item(number) as? SVGElement {
                 if nodeElement.getAttribute("class") == "primary" {
                     if let pathLayer = svgImage.layer(withIdentifier: nodeElement.identifier) as? CAShapeLayer {
-                        pathLayer.fillColor = colorWithHexString(hexString: primaryColorHex).cgColor
+                        pathLayer.fillColor = primaryColor.cgColor
                     }
                 } else if nodeElement.getAttribute("class") == "secondary" {
                     if let pathLayer = svgImage.layer(withIdentifier: nodeElement.identifier) as? CAShapeLayer {
-                        pathLayer.fillColor = colorWithHexString(hexString: secondaryColorHex).cgColor
+                        pathLayer.fillColor = secondaryColor.cgColor
                     }
                 } else if nodeElement.getAttribute("class") == "tertiary" {
                     if let pathLayer = svgImage.layer(withIdentifier: nodeElement.identifier) as? CAShapeLayer {
-                        pathLayer.fillColor = colorWithHexString(hexString: tertiaryColorHex).cgColor
+                        pathLayer.fillColor = tertiaryColor.cgColor
                     }
                 } else if nodeElement.getAttribute("class") == "pinFill" {
                     if let pathLayer = svgImage.layer(withIdentifier: nodeElement.identifier) as? CAShapeLayer {
-                        pathLayer.fillColor = colorWithHexString(hexString: pinFillColorHex).cgColor
+                        pathLayer.fillColor = pinFillColor.cgColor
                     }
                 }
             }
@@ -174,6 +196,10 @@ public final class FieldNoteIcons {
       }
     
     static private func colorWithHexString(hexString: String) -> UIColor {
+        guard hexString.count == 6 else {
+            return .white
+        }
+        
         var colorString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
         colorString = colorString.replacingOccurrences(of: "#", with: "").uppercased()
 
@@ -187,7 +213,6 @@ public final class FieldNoteIcons {
     }
                         
     static private func colorComponentFrom(colorString: String, start: Int, length: Int) -> CGFloat {
-
         let startIndex = colorString.index(colorString.startIndex, offsetBy: start)
         let endIndex = colorString.index(startIndex, offsetBy: length)
         let subString = colorString[startIndex..<endIndex]

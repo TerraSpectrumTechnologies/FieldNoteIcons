@@ -52,14 +52,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func refreshIconImages() {
         iconImages.removeAll()
         for iconName in iconsNames {
-            let primaryHexColor = colorToHexString(color: houseColor)
-            let whiteHex = colorToHexString(color: UIColor.white)
             if showPinSwitch.isOn {
-                if let iconImage = FieldNoteIcons.PinIcon(name: iconName, size: CGSize(width: 100, height: 100), primaryColorHex: primaryHexColor, secondaryColorHex: whiteHex, tertiaryColorHex: whiteHex, pinFillColorHex: whiteHex) {
+                if let iconImage = FieldNoteIcons.PinIcon(name: iconName, size: CGSize(width: 100, height: 100), primaryColor: houseColor, secondaryColor: .white, tertiaryColor: .white, pinFillColor: .white) {
                     iconImages.append(IconImage(image: iconImage, name: iconName))
                 }
             } else {
-                if let iconImage = FieldNoteIcons.Icon(name: iconName, size: CGSize(width: 100, height: 100), primaryColorHex: primaryHexColor, secondaryColorHex: whiteHex, tertiaryColorHex: whiteHex, pinFillColorHex: whiteHex) {
+                if let iconImage = FieldNoteIcons.Icon(name: iconName, size: CGSize(width: 100, height: 100), primaryColor: houseColor, secondaryColor: .white, tertiaryColor: .white, pinFillColor: .white) {
                     iconImages.append(IconImage(image: iconImage, name: iconName))
                 }
             }
