@@ -259,8 +259,8 @@
 		9DB863D727A2055100641C8A /* arrowsignright.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863CE27A2055100641C8A /* arrowsignright.svg */; };
 		9DB863D827A2055100641C8A /* arrowsigndown.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863CF27A2055100641C8A /* arrowsigndown.svg */; };
 		9DB863D927A2055100641C8A /* arrowsigndown.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863CF27A2055100641C8A /* arrowsigndown.svg */; };
-		9DB863DB27A205A300641C8A /* assigningplantocrew.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863DA27A205A300641C8A /* assigningplantocrew.svg */; };
-		9DB863DC27A205A300641C8A /* assigningplantocrew.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863DA27A205A300641C8A /* assigningplantocrew.svg */; };
+		9DB863DB27A205A300641C8A /* assigningplancrew.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863DA27A205A300641C8A /* assigningplancrew.svg */; };
+		9DB863DC27A205A300641C8A /* assigningplancrew.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863DA27A205A300641C8A /* assigningplancrew.svg */; };
 		9DB863E027A205B500641C8A /* backyardlift.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863DD27A205B500641C8A /* backyardlift.svg */; };
 		9DB863E127A205B500641C8A /* backyardlift.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863DD27A205B500641C8A /* backyardlift.svg */; };
 		9DB863E227A205B500641C8A /* audit.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB863DE27A205B500641C8A /* audit.svg */; };
@@ -415,8 +415,8 @@
 		9DB864C927A2072E00641C8A /* sidewalkdamage.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB864A927A2072D00641C8A /* sidewalkdamage.svg */; };
 		9DB864CA27A2072E00641C8A /* save.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB864AA27A2072D00641C8A /* save.svg */; };
 		9DB864CB27A2072E00641C8A /* save.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB864AA27A2072D00641C8A /* save.svg */; };
-		9DB864CC27A2072E00641C8A /* skull.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB864AB27A2072E00641C8A /* skull.svg */; };
-		9DB864CD27A2072E00641C8A /* skull.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB864AB27A2072E00641C8A /* skull.svg */; };
+		9DB864CC27A2072E00641C8A /* crossbones.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB864AB27A2072E00641C8A /* crossbones.svg */; };
+		9DB864CD27A2072E00641C8A /* crossbones.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB864AB27A2072E00641C8A /* crossbones.svg */; };
 		9DB864CE27A2072E00641C8A /* roaddamage.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB864AC27A2072E00641C8A /* roaddamage.svg */; };
 		9DB864CF27A2072E00641C8A /* roaddamage.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB864AC27A2072E00641C8A /* roaddamage.svg */; };
 		9DB864D027A2072E00641C8A /* propertyhome.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DB864AD27A2072E00641C8A /* propertyhome.svg */; };
@@ -519,8 +519,8 @@
 		9DF91FCF279F452300A60661 /* pin_arrowsignleft.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F44279F451F00A60661 /* pin_arrowsignleft.svg */; };
 		9DF91FD0279F452300A60661 /* pin_barkingdog.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F45279F451F00A60661 /* pin_barkingdog.svg */; };
 		9DF91FD1279F452300A60661 /* pin_barkingdog.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F45279F451F00A60661 /* pin_barkingdog.svg */; };
-		9DF91FD2279F452300A60661 /* pin_skull.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F46279F451F00A60661 /* pin_skull.svg */; };
-		9DF91FD3279F452300A60661 /* pin_skull.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F46279F451F00A60661 /* pin_skull.svg */; };
+		9DF91FD2279F452300A60661 /* pin_crossbones.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F46279F451F00A60661 /* pin_crossbones.svg */; };
+		9DF91FD3279F452300A60661 /* pin_crossbones.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F46279F451F00A60661 /* pin_crossbones.svg */; };
 		9DF91FD4279F452300A60661 /* pin_search.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F47279F451F00A60661 /* pin_search.svg */; };
 		9DF91FD5279F452300A60661 /* pin_search.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F47279F451F00A60661 /* pin_search.svg */; };
 		9DF91FD6279F452300A60661 /* pin_copy.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F48279F451F00A60661 /* pin_copy.svg */; };
@@ -561,8 +561,8 @@
 		9DF91FF9279F452300A60661 /* pin_mushroom.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F59279F452000A60661 /* pin_mushroom.svg */; };
 		9DF91FFA279F452300A60661 /* pin_hazard1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F5A279F452000A60661 /* pin_hazard1.svg */; };
 		9DF91FFB279F452300A60661 /* pin_hazard1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F5A279F452000A60661 /* pin_hazard1.svg */; };
-		9DF91FFC279F452300A60661 /* pin_jobbehaviorobservation.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F5B279F452000A60661 /* pin_jobbehaviorobservation.svg */; };
-		9DF91FFD279F452300A60661 /* pin_jobbehaviorobservation.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F5B279F452000A60661 /* pin_jobbehaviorobservation.svg */; };
+		9DF91FFC279F452300A60661 /* pin_binoculars.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F5B279F452000A60661 /* pin_binoculars.svg */; };
+		9DF91FFD279F452300A60661 /* pin_binoculars.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F5B279F452000A60661 /* pin_binoculars.svg */; };
 		9DF91FFE279F452300A60661 /* pin_direction.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F5C279F452000A60661 /* pin_direction.svg */; };
 		9DF91FFF279F452300A60661 /* pin_direction.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F5C279F452000A60661 /* pin_direction.svg */; };
 		9DF92002279F452300A60661 /* pin_sproutingstump.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F5E279F452000A60661 /* pin_sproutingstump.svg */; };
@@ -675,8 +675,8 @@
 		9DF9206D279F452300A60661 /* pin_jarraff.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F93279F452200A60661 /* pin_jarraff.svg */; };
 		9DF9206E279F452300A60661 /* pin_edit.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F94279F452200A60661 /* pin_edit.svg */; };
 		9DF9206F279F452300A60661 /* pin_edit.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F94279F452200A60661 /* pin_edit.svg */; };
-		9DF92070279F452300A60661 /* pin_personinhardhat.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F95279F452200A60661 /* pin_personinhardhat.svg */; };
-		9DF92071279F452300A60661 /* pin_personinhardhat.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F95279F452200A60661 /* pin_personinhardhat.svg */; };
+		9DF92070279F452300A60661 /* pin_personhardhat.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F95279F452200A60661 /* pin_personhardhat.svg */; };
+		9DF92071279F452300A60661 /* pin_personhardhat.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F95279F452200A60661 /* pin_personhardhat.svg */; };
 		9DF92072279F452300A60661 /* pin_checkmark.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F96279F452200A60661 /* pin_checkmark.svg */; };
 		9DF92073279F452300A60661 /* pin_checkmark.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F96279F452200A60661 /* pin_checkmark.svg */; };
 		9DF92074279F452300A60661 /* pin_chainsaw.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91F97279F452200A60661 /* pin_chainsaw.svg */; };
@@ -711,8 +711,8 @@
 		9DF92091279F452300A60661 /* pin_multiplepine.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA5279F452300A60661 /* pin_multiplepine.svg */; };
 		9DF92092279F452300A60661 /* pin_exclamationpoint.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA6279F452300A60661 /* pin_exclamationpoint.svg */; };
 		9DF92093279F452300A60661 /* pin_exclamationpoint.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA6279F452300A60661 /* pin_exclamationpoint.svg */; };
-		9DF92094279F452300A60661 /* multipleplan.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA7279F452300A60661 /* multipleplan.svg */; };
-		9DF92095279F452300A60661 /* multipleplan.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA7279F452300A60661 /* multipleplan.svg */; };
+		9DF92094279F452300A60661 /* multipleplans.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA7279F452300A60661 /* multipleplans.svg */; };
+		9DF92095279F452300A60661 /* multipleplans.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA7279F452300A60661 /* multipleplans.svg */; };
 		9DF92096279F452300A60661 /* pin_mower.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA8279F452300A60661 /* pin_mower.svg */; };
 		9DF92097279F452300A60661 /* pin_mower.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA8279F452300A60661 /* pin_mower.svg */; };
 		9DF92098279F452300A60661 /* pin_roaddamage.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA9279F452300A60661 /* pin_roaddamage.svg */; };
@@ -767,13 +767,22 @@
 		9DFCD2A327A98B7A00F6A5DD /* pin_lightningbolt.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2A127A98B7A00F6A5DD /* pin_lightningbolt.svg */; };
 		9DFCD2A527A98B8400F6A5DD /* pin_lettera.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2A427A98B8400F6A5DD /* pin_lettera.svg */; };
 		9DFCD2A627A98B8400F6A5DD /* pin_lettera.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2A427A98B8400F6A5DD /* pin_lettera.svg */; };
+		9DFCD2A927A99FF000F6A5DD /* pin_snake.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2A827A99FF000F6A5DD /* pin_snake.svg */; };
+		9DFCD2AA27A99FF000F6A5DD /* pin_snake.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2A827A99FF000F6A5DD /* pin_snake.svg */; };
+		9DFCD2AC27A9A01100F6A5DD /* pin_waterdrop.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2AB27A9A01100F6A5DD /* pin_waterdrop.svg */; };
+		9DFCD2AD27A9A01100F6A5DD /* pin_waterdrop.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2AB27A9A01100F6A5DD /* pin_waterdrop.svg */; };
+		9DFCD2B227A9A31A00F6A5DD /* mowing.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2B127A9A31A00F6A5DD /* mowing.svg */; };
+		9DFCD2B327A9A31A00F6A5DD /* mowing.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2B127A9A31A00F6A5DD /* mowing.svg */; };
+		9DFCD2B527A9A3E500F6A5DD /* pin_mower.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2B427A9A3E500F6A5DD /* pin_mower.svg */; };
+		9DFCD2B627A9A3E500F6A5DD /* pin_mower.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2B427A9A3E500F6A5DD /* pin_mower.svg */; };
+		9DFCD2B827A9A44A00F6A5DD /* pin_mowing.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2B727A9A44A00F6A5DD /* pin_mowing.svg */; };
+		9DFCD2B927A9A44A00F6A5DD /* pin_mowing.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DFCD2B727A9A44A00F6A5DD /* pin_mowing.svg */; };
 		9FC13193077CDAC31E35CB8A1E707BAA /* SVGAnimatedPreserveAspectRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 97012DAE10F4F6954AC59EF9EEACB0EB /* SVGAnimatedPreserveAspectRatio.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A034FC4A8982F12C1ECE0A6C025F0042 /* SVGAngle.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D73577CB6F56776B3D4B4B511DDCC /* SVGAngle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A090403485046A3DE9DC7606E26DE31B /* SVGElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A46F3FDB225FF694ADE75052AAE1CF /* SVGElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A146106406E36E6CBD597C949193CF17 /* SVGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B85AAF7B6484B069C74DEC66B102D210 /* SVGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A368A84FD6CF9844B4C628A26DADC039 /* SVGTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F82DA79E555F4742748872EC1D5B029 /* SVGTransform.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A3926809764FD1D580E5BCE19DA51D6F /* CSSRuleList.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DC7CD8C9C5A9B6C63CC6496031A8B2 /* CSSRuleList.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A655226335433529735937419D5CD69E /* mowing.svg in Sources */ = {isa = PBXBuildFile; fileRef = DFC065CAA7C13C012BF82B78F5AD646E /* mowing.svg */; };
 		A6875B4B51BE114B4BDFE811A37E781D /* SVGKExporterNSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EC95829810159875965FC296AF7849 /* SVGKExporterNSData.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A83DABB63220EA230E466F15AFF26DDE /* SVGKInlineResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8004A8195ECA72BCD4F3F4D6E8C5D1 /* SVGKInlineResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A84B681E83A0AEB18C4B62837D34CCCF /* SVGKInlineResource.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E18A1176999AD2CD5CE023E15AE936 /* SVGKInlineResource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -870,7 +879,6 @@
 		F47280834063AB7B6F3ACA7563904719 /* SVGKFastImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CBD56FE26291668A9D2C8DF64AE2955 /* SVGKFastImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4DBE7E62C366C4D2DFDC4D9CAA9D8D9 /* SVGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C77CA7AA6446013AA2A7A876B27BED87 /* SVGUtils.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F5312DCA120520C5D47DA89A31DC1F40 /* BaseClassForAllSVGBasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5959FC22E0AC4875D266D3CEA1D5EA /* BaseClassForAllSVGBasicShapes.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F5F79349881204D4A9340AE1D39470F0 /* mowing.svg in Resources */ = {isa = PBXBuildFile; fileRef = DFC065CAA7C13C012BF82B78F5AD646E /* mowing.svg */; };
 		F65CBCBF4A4F7B8C5B9FBA526DDA544D /* StyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DCCD98ED17553C9370A02FF69E6FA3 /* StyleSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F6605CB4BA21163C9D3D7C6E4E62BF7B /* DDFileLogger+Buffering.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABFE25A77807571E6FFE0B62403F1C3 /* DDFileLogger+Buffering.m */; };
 		F69E0C70D7AFD69F58EAE0E818BCEA7E /* AppleSucksDOMImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7912B249616A2F67C392E5572D96626F /* AppleSucksDOMImplementation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -1164,7 +1172,7 @@
 		9DB863CD27A2055100641C8A /* arrowsignleft.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = arrowsignleft.svg; sourceTree = "<group>"; };
 		9DB863CE27A2055100641C8A /* arrowsignright.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = arrowsignright.svg; sourceTree = "<group>"; };
 		9DB863CF27A2055100641C8A /* arrowsigndown.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = arrowsigndown.svg; sourceTree = "<group>"; };
-		9DB863DA27A205A300641C8A /* assigningplantocrew.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = assigningplantocrew.svg; sourceTree = "<group>"; };
+		9DB863DA27A205A300641C8A /* assigningplancrew.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = assigningplancrew.svg; sourceTree = "<group>"; };
 		9DB863DD27A205B500641C8A /* backyardlift.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = backyardlift.svg; sourceTree = "<group>"; };
 		9DB863DE27A205B500641C8A /* audit.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = audit.svg; sourceTree = "<group>"; };
 		9DB863DF27A205B500641C8A /* letterb.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = letterb.svg; sourceTree = "<group>"; };
@@ -1242,7 +1250,7 @@
 		9DB864A827A2072D00641C8A /* setting.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = setting.svg; sourceTree = "<group>"; };
 		9DB864A927A2072D00641C8A /* sidewalkdamage.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sidewalkdamage.svg; sourceTree = "<group>"; };
 		9DB864AA27A2072D00641C8A /* save.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = save.svg; sourceTree = "<group>"; };
-		9DB864AB27A2072E00641C8A /* skull.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = skull.svg; sourceTree = "<group>"; };
+		9DB864AB27A2072E00641C8A /* crossbones.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = crossbones.svg; sourceTree = "<group>"; };
 		9DB864AC27A2072E00641C8A /* roaddamage.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = roaddamage.svg; sourceTree = "<group>"; };
 		9DB864AD27A2072E00641C8A /* propertyhome.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = propertyhome.svg; sourceTree = "<group>"; };
 		9DB864AE27A2072E00641C8A /* safetyaudit.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = safetyaudit.svg; sourceTree = "<group>"; };
@@ -1294,7 +1302,7 @@
 		9DF91F43279F451F00A60661 /* pin_stumpremoval2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_stumpremoval2.svg; sourceTree = "<group>"; };
 		9DF91F44279F451F00A60661 /* pin_arrowsignleft.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_arrowsignleft.svg; sourceTree = "<group>"; };
 		9DF91F45279F451F00A60661 /* pin_barkingdog.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_barkingdog.svg; sourceTree = "<group>"; };
-		9DF91F46279F451F00A60661 /* pin_skull.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_skull.svg; sourceTree = "<group>"; };
+		9DF91F46279F451F00A60661 /* pin_crossbones.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_crossbones.svg; sourceTree = "<group>"; };
 		9DF91F47279F451F00A60661 /* pin_search.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_search.svg; sourceTree = "<group>"; };
 		9DF91F48279F451F00A60661 /* pin_copy.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_copy.svg; sourceTree = "<group>"; };
 		9DF91F49279F452000A60661 /* pin_pole.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_pole.svg; sourceTree = "<group>"; };
@@ -1315,7 +1323,7 @@
 		9DF91F58279F452000A60661 /* pin_genericdocument.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_genericdocument.svg; sourceTree = "<group>"; };
 		9DF91F59279F452000A60661 /* pin_mushroom.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_mushroom.svg; sourceTree = "<group>"; };
 		9DF91F5A279F452000A60661 /* pin_hazard1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_hazard1.svg; sourceTree = "<group>"; };
-		9DF91F5B279F452000A60661 /* pin_jobbehaviorobservation.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_jobbehaviorobservation.svg; sourceTree = "<group>"; };
+		9DF91F5B279F452000A60661 /* pin_binoculars.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_binoculars.svg; sourceTree = "<group>"; };
 		9DF91F5C279F452000A60661 /* pin_direction.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_direction.svg; sourceTree = "<group>"; };
 		9DF91F5E279F452000A60661 /* pin_sproutingstump.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_sproutingstump.svg; sourceTree = "<group>"; };
 		9DF91F5F279F452000A60661 /* pin_propertyowner.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_propertyowner.svg; sourceTree = "<group>"; };
@@ -1372,7 +1380,7 @@
 		9DF91F92279F452200A60661 /* pin_measuringtool3.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_measuringtool3.svg; sourceTree = "<group>"; };
 		9DF91F93279F452200A60661 /* pin_jarraff.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_jarraff.svg; sourceTree = "<group>"; };
 		9DF91F94279F452200A60661 /* pin_edit.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_edit.svg; sourceTree = "<group>"; };
-		9DF91F95279F452200A60661 /* pin_personinhardhat.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_personinhardhat.svg; sourceTree = "<group>"; };
+		9DF91F95279F452200A60661 /* pin_personhardhat.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_personhardhat.svg; sourceTree = "<group>"; };
 		9DF91F96279F452200A60661 /* pin_checkmark.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_checkmark.svg; sourceTree = "<group>"; };
 		9DF91F97279F452200A60661 /* pin_chainsaw.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_chainsaw.svg; sourceTree = "<group>"; };
 		9DF91F98279F452200A60661 /* pin_manual.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_manual.svg; sourceTree = "<group>"; };
@@ -1390,7 +1398,7 @@
 		9DF91FA4279F452300A60661 /* pin_regularcar.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_regularcar.svg; sourceTree = "<group>"; };
 		9DF91FA5279F452300A60661 /* pin_multiplepine.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_multiplepine.svg; sourceTree = "<group>"; };
 		9DF91FA6279F452300A60661 /* pin_exclamationpoint.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_exclamationpoint.svg; sourceTree = "<group>"; };
-		9DF91FA7279F452300A60661 /* multipleplan.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = multipleplan.svg; sourceTree = "<group>"; };
+		9DF91FA7279F452300A60661 /* multipleplans.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = multipleplans.svg; sourceTree = "<group>"; };
 		9DF91FA8279F452300A60661 /* pin_mower.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_mower.svg; sourceTree = "<group>"; };
 		9DF91FA9279F452300A60661 /* pin_roaddamage.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_roaddamage.svg; sourceTree = "<group>"; };
 		9DF91FAA279F452300A60661 /* pin_questionmark.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_questionmark.svg; sourceTree = "<group>"; };
@@ -1418,6 +1426,11 @@
 		9DFCD29E27A98B5C00F6A5DD /* pin_snowflake.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_snowflake.svg; sourceTree = "<group>"; };
 		9DFCD2A127A98B7A00F6A5DD /* pin_lightningbolt.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_lightningbolt.svg; sourceTree = "<group>"; };
 		9DFCD2A427A98B8400F6A5DD /* pin_lettera.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_lettera.svg; sourceTree = "<group>"; };
+		9DFCD2A827A99FF000F6A5DD /* pin_snake.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_snake.svg; sourceTree = "<group>"; };
+		9DFCD2AB27A9A01100F6A5DD /* pin_waterdrop.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_waterdrop.svg; sourceTree = "<group>"; };
+		9DFCD2B127A9A31A00F6A5DD /* mowing.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mowing.svg; sourceTree = "<group>"; };
+		9DFCD2B427A9A3E500F6A5DD /* pin_mower.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_mower.svg; sourceTree = "<group>"; };
+		9DFCD2B727A9A44A00F6A5DD /* pin_mowing.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pin_mowing.svg; sourceTree = "<group>"; };
 		9E921903354DB6918BBE69F34A30BB84 /* SVGMatrix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGMatrix.m; path = "Source/DOM classes/SVG-DOM/SVGMatrix.m"; sourceTree = "<group>"; };
 		A0FA4DD2074779EE44B49C0F44E5EB65 /* Node+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Node+Mutable.h"; path = "Source/DOM classes/Core DOM/Node+Mutable.h"; sourceTree = "<group>"; };
 		A1A68370798BE39E63A7327642F6686F /* CALayerWithClipRender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CALayerWithClipRender.m; path = "Source/QuartzCore additions/CALayerWithClipRender.m"; sourceTree = "<group>"; };
@@ -1510,7 +1523,6 @@
 		DEE9980925188D3F7C938CAE3B41B671 /* SVGKExporterUIImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKExporterUIImage.h; path = Source/Exporters/SVGKExporterUIImage.h; sourceTree = "<group>"; };
 		DF84B1AF554A522FC8C35AD9F0836D4C /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDMultiFormatter.h; sourceTree = "<group>"; };
 		DF9618CC19585AAD452473A2F725DD35 /* FieldNoteIcons-FieldNoteIcons */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "FieldNoteIcons-FieldNoteIcons"; path = FieldNoteIcons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFC065CAA7C13C012BF82B78F5AD646E /* mowing.svg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = mowing.svg; sourceTree = "<group>"; };
 		DFDB7DAAE2EABB12BAADFB1E32F4CF64 /* SVGKParserPatternsAndGradients.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParserPatternsAndGradients.m; path = "Source/Parsers/Parser Extensions/SVGKParserPatternsAndGradients.m"; sourceTree = "<group>"; };
 		E042D09A9454F70DF0171F7CA8CBFF07 /* Pods-FieldNoteIcons_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FieldNoteIcons_Tests"; path = Pods_FieldNoteIcons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1545B1C11C53D58248195AAA338971A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -1781,7 +1793,7 @@
 				9DB863CD27A2055100641C8A /* arrowsignleft.svg */,
 				9DB863CE27A2055100641C8A /* arrowsignright.svg */,
 				9DB863CC27A2055100641C8A /* arrowsignup.svg */,
-				9DB863DA27A205A300641C8A /* assigningplantocrew.svg */,
+				9DB863DA27A205A300641C8A /* assigningplancrew.svg */,
 				9DB26713279A1FF000ED6309 /* asterisk.svg */,
 				9DB863DE27A205B500641C8A /* audit.svg */,
 				9DB863DD27A205B500641C8A /* backyardlift.svg */,
@@ -1809,6 +1821,7 @@
 				9DB8641727A2061D00641C8A /* configuration.svg */,
 				9DB8641627A2061D00641C8A /* copy.svg */,
 				9DB8641827A2061D00641C8A /* coyote.svg */,
+				9DB864AB27A2072E00641C8A /* crossbones.svg */,
 				9DB8641527A2061D00641C8A /* deer.svg */,
 				9DB8641327A2061D00641C8A /* delete.svg */,
 				9DB8641427A2061D00641C8A /* delta.svg */,
@@ -1852,11 +1865,11 @@
 				9DB8646C27A206A200641C8A /* mileage.svg */,
 				9DB2671F279A1FF100ED6309 /* money.svg */,
 				9DB8647627A206AC00641C8A /* mower.svg */,
-				DFC065CAA7C13C012BF82B78F5AD646E /* mowing.svg */,
+				9DFCD2B127A9A31A00F6A5DD /* mowing.svg */,
 				9DB266DC279A1FED00ED6309 /* multiedit.svg */,
 				9DB8647927A206C200641C8A /* multipleperson.svg */,
 				9DB8647A27A206C200641C8A /* multiplepine.svg */,
-				9DF91FA7279F452300A60661 /* multipleplan.svg */,
+				9DF91FA7279F452300A60661 /* multipleplans.svg */,
 				9DB8648127A206E200641C8A /* multipletimesheet.svg */,
 				9DB8648227A206E200641C8A /* multipletrees.svg */,
 				9DB8647F27A206E200641C8A /* mushroom.svg */,
@@ -1903,6 +1916,7 @@
 				9DF91F84279F452100A60661 /* pin_configuration.svg */,
 				9DF91F48279F451F00A60661 /* pin_copy.svg */,
 				9DF91F89279F452200A60661 /* pin_coyote.svg */,
+				9DF91F46279F451F00A60661 /* pin_crossbones.svg */,
 				9DF91FB0279F452300A60661 /* pin_deer.svg */,
 				9DF91F9B279F452200A60661 /* pin_delete.svg */,
 				9DF91F52279F452000A60661 /* pin_delta.svg */,
@@ -1929,7 +1943,7 @@
 				9DF91F8F279F452200A60661 /* pin_incidentreport.svg */,
 				9DF91F78279F452100A60661 /* pin_info.svg */,
 				9DF91F93279F452200A60661 /* pin_jarraff.svg */,
-				9DF91F5B279F452000A60661 /* pin_jobbehaviorobservation.svg */,
+				9DF91F5B279F452000A60661 /* pin_binoculars.svg */,
 				9DF91F70279F452100A60661 /* pin_jobbriefing.svg */,
 				9DFCD2A427A98B8400F6A5DD /* pin_lettera.svg */,
 				9DF91F71279F452100A60661 /* pin_letterb.svg */,
@@ -1937,6 +1951,8 @@
 				9DF91F3F279F451F00A60661 /* pin_letterw.svg */,
 				9DFCD2A127A98B7A00F6A5DD /* pin_lightningbolt.svg */,
 				9DF91F98279F452200A60661 /* pin_manual.svg */,
+				9DFCD2B427A9A3E500F6A5DD /* pin_mower.svg */,
+				9DFCD2B727A9A44A00F6A5DD /* pin_mowing.svg */,
 				9DF91F4B279F452000A60661 /* pin_measuringtool1.svg */,
 				9DF91F76279F452100A60661 /* pin_measuringtool2.svg */,
 				9DF91F92279F452200A60661 /* pin_measuringtool3.svg */,
@@ -1955,7 +1971,7 @@
 				9DF91F56279F452000A60661 /* pin_outage.svg */,
 				9DF91F4E279F452000A60661 /* pin_paperstack.svg */,
 				9DF91F54279F452000A60661 /* pin_performancereview.svg */,
-				9DF91F95279F452200A60661 /* pin_personinhardhat.svg */,
+				9DF91F95279F452200A60661 /* pin_personhardhat.svg */,
 				9DF91F79279F452100A60661 /* pin_pheasant.svg */,
 				9DF91F69279F452100A60661 /* pin_pickuptruck.svg */,
 				9DF91F4C279F452000A60661 /* pin_pine.svg */,
@@ -1976,7 +1992,7 @@
 				9DF91F7C279F452100A60661 /* pin_setting.svg */,
 				9DF91F3D279F451F00A60661 /* pin_shovel.svg */,
 				9DF91F57279F452000A60661 /* pin_sidewalkdamage.svg */,
-				9DF91F46279F451F00A60661 /* pin_skull.svg */,
+				9DFCD2A827A99FF000F6A5DD /* pin_snake.svg */,
 				9DFCD29E27A98B5C00F6A5DD /* pin_snowflake.svg */,
 				9DF91F64279F452000A60661 /* pin_snowplow.svg */,
 				9DF91F91279F452200A60661 /* pin_sprayingleaves.svg */,
@@ -2006,6 +2022,7 @@
 				9DF91F50279F452000A60661 /* pin_turkey.svg */,
 				9DF91F75279F452100A60661 /* pin_vehicleinspection.svg */,
 				9DF91F9D279F452200A60661 /* pin_vines.svg */,
+				9DFCD2AB27A9A01100F6A5DD /* pin_waterdrop.svg */,
 				9DF91F9F279F452200A60661 /* pin_wildflowers.svg */,
 				9DF91F68279F452100A60661 /* pin_workgroup.svg */,
 				9DF91F73279F452100A60661 /* pin_workingplan.svg */,
@@ -2029,7 +2046,6 @@
 				9DB864A827A2072D00641C8A /* setting.svg */,
 				9DB864AF27A2072E00641C8A /* shovel.svg */,
 				9DB864A927A2072D00641C8A /* sidewalkdamage.svg */,
-				9DB864AB27A2072E00641C8A /* skull.svg */,
 				9DB2674F279A1FF400ED6309 /* snake.svg */,
 				9DB864D627A2073A00641C8A /* snowplow.svg */,
 				9DB26745279A1FF300ED6309 /* snowflake.svg */,
@@ -2754,6 +2770,7 @@
 				9DF92007279F452300A60661 /* pin_pipeline.svg in Resources */,
 				9DF9200B279F452300A60661 /* pin_streetlightout.svg in Resources */,
 				9DB864B327A2072E00641C8A /* pine.svg in Resources */,
+				9DFCD2AA27A99FF000F6A5DD /* pin_snake.svg in Resources */,
 				9DB266C5279A1F3600ED6309 /* number1.svg in Resources */,
 				9DF9207F279F452300A60661 /* pin_support3.svg in Resources */,
 				9DF91FBB279F452300A60661 /* pin_drone.svg in Resources */,
@@ -2762,7 +2779,7 @@
 				9DB8645A27A2068900641C8A /* incidentreport.svg in Resources */,
 				9DF920A5279F452300A60661 /* pin_mileage.svg in Resources */,
 				9DB864BB27A2072E00641C8A /* questionmark.svg in Resources */,
-				9DF91FD3279F452300A60661 /* pin_skull.svg in Resources */,
+				9DF91FD3279F452300A60661 /* pin_crossbones.svg in Resources */,
 				9DF91FF1279F452300A60661 /* pin_trail.svg in Resources */,
 				9DF91FBD279F452300A60661 /* pin_hazard2.svg in Resources */,
 				9DB8648827A206E300641C8A /* multipletimesheet.svg in Resources */,
@@ -2770,7 +2787,7 @@
 				9DB8645E27A2068900641C8A /* hazard2.svg in Resources */,
 				9DB8652E27A207A400641C8A /* wildflowers.svg in Resources */,
 				9DB8653227A207A400641C8A /* workingplan.svg in Resources */,
-				9DB864CD27A2072E00641C8A /* skull.svg in Resources */,
+				9DB864CD27A2072E00641C8A /* crossbones.svg in Resources */,
 				9DB8648A27A206E300641C8A /* multipletrees.svg in Resources */,
 				9DB8651927A2079200641C8A /* trashcan.svg in Resources */,
 				9DB8652927A2079200641C8A /* trim.svg in Resources */,
@@ -2816,7 +2833,7 @@
 				9DB8646927A2069700641C8A /* info.svg in Resources */,
 				9DB864CF27A2072E00641C8A /* roaddamage.svg in Resources */,
 				9DB864C527A2072E00641C8A /* search.svg in Resources */,
-				9DF92095279F452300A60661 /* multipleplan.svg in Resources */,
+				9DF92095279F452300A60661 /* multipleplans.svg in Resources */,
 				9DFCD2A327A98B7A00F6A5DD /* pin_lightningbolt.svg in Resources */,
 				9DF92051279F452300A60661 /* pin_butterfly.svg in Resources */,
 				9DFCD29127A98ADC00F6A5DD /* pin_eye.svg in Resources */,
@@ -2842,7 +2859,7 @@
 				9DF920B1279F452300A60661 /* pin_tree.svg in Resources */,
 				9DB8649927A206FF00641C8A /* personhardhat.svg in Resources */,
 				9DB8642527A2061E00641C8A /* coyote.svg in Resources */,
-				9DF92071279F452300A60661 /* pin_personinhardhat.svg in Resources */,
+				9DF92071279F452300A60661 /* pin_personhardhat.svg in Resources */,
 				9DB863C827A204C800641C8A /* number4.svg in Resources */,
 				9DB864C927A2072E00641C8A /* sidewalkdamage.svg in Resources */,
 				9DB8647327A206A200641C8A /* mileage.svg in Resources */,
@@ -2929,13 +2946,14 @@
 				9DF91FEB279F452300A60661 /* pin_delta.svg in Resources */,
 				9DB863F527A205DA00641C8A /* brokensprinkler.svg in Resources */,
 				9DF9208B279F452300A60661 /* pin_driving.svg in Resources */,
+				9DFCD2B327A9A31A00F6A5DD /* mowing.svg in Resources */,
 				9DB864B727A2072E00641C8A /* propertyowner.svg in Resources */,
 				9DF920AF279F452300A60661 /* pin_timesheet.svg in Resources */,
 				9DB8651727A2079200641C8A /* trafficlightissue.svg in Resources */,
 				9DB2679E279A1FF500ED6309 /* bargraph.svg in Resources */,
+				9DFCD2AD27A9A01100F6A5DD /* pin_waterdrop.svg in Resources */,
 				9DB8644B27A2067900641C8A /* genericdocument.svg in Resources */,
 				9DF92031279F452300A60661 /* pin_vehicleinspection.svg in Resources */,
-				F5F79349881204D4A9340AE1D39470F0 /* mowing.svg in Resources */,
 				9DF9207B279F452300A60661 /* pin_multipletrees.svg in Resources */,
 				9DF9209B279F452300A60661 /* pin_questionmark.svg in Resources */,
 				9DB864D527A2072E00641C8A /* shovel.svg in Resources */,
@@ -2969,6 +2987,7 @@
 				9DB863F927A205DA00641C8A /* brush.svg in Resources */,
 				9DB8650227A2077500641C8A /* streetlightout.svg in Resources */,
 				9DF92019279F452300A60661 /* pin_pickuptruck.svg in Resources */,
+				9DFCD2B627A9A3E500F6A5DD /* pin_mower.svg in Resources */,
 				9DB863FB27A205DA00641C8A /* letterc.svg in Resources */,
 				9DF9201F279F452300A60661 /* pin_clockwithcalendar.svg in Resources */,
 				9DB8642127A2061E00641C8A /* copy.svg in Resources */,
@@ -2985,12 +3004,13 @@
 				9DB8644427A2066500641C8A /* fish.svg in Resources */,
 				9DB863D727A2055100641C8A /* arrowsignright.svg in Resources */,
 				9DF92087279F452300A60661 /* pin_nativeprairie.svg in Resources */,
+				9DFCD2B927A9A44A00F6A5DD /* pin_mowing.svg in Resources */,
 				9DB8651D27A2079200641C8A /* trail.svg in Resources */,
 				9DB864F027A2077500641C8A /* stumpspraying.svg in Resources */,
 				9DF92035279F452300A60661 /* pin_secondarypole.svg in Resources */,
 				9DF91FF5279F452300A60661 /* pin_sidewalkdamage.svg in Resources */,
 				9DB2682A279A1FF600ED6309 /* flame.svg in Resources */,
-				9DB863DC27A205A300641C8A /* assigningplantocrew.svg in Resources */,
+				9DB863DC27A205A300641C8A /* assigningplancrew.svg in Resources */,
 				9DB267EC279A1FF500ED6309 /* lightningbolt.svg in Resources */,
 				9DF920AB279F452300A60661 /* pin_arrowsignright.svg in Resources */,
 				9DF92053279F452300A60661 /* pin_tailgate.svg in Resources */,
@@ -3001,7 +3021,7 @@
 				9DF92097279F452300A60661 /* pin_mower.svg in Resources */,
 				9DB8641227A2060D00641C8A /* clockwithcalendar.svg in Resources */,
 				9DF9209D279F452300A60661 /* pin_brokenpipe.svg in Resources */,
-				9DF91FFD279F452300A60661 /* pin_jobbehaviorobservation.svg in Resources */,
+				9DF91FFD279F452300A60661 /* pin_binoculars.svg in Resources */,
 				9DB8653527A207AA00641C8A /* zoomtoextend.svg in Resources */,
 				9DF92081279F452300A60661 /* pin_vines.svg in Resources */,
 				9DF92021279F452300A60661 /* pin_propertyhome.svg in Resources */,
@@ -3053,6 +3073,7 @@
 				9DF92006279F452300A60661 /* pin_pipeline.svg in Resources */,
 				9DF9200A279F452300A60661 /* pin_streetlightout.svg in Resources */,
 				9DB864B227A2072E00641C8A /* pine.svg in Resources */,
+				9DFCD2A927A99FF000F6A5DD /* pin_snake.svg in Resources */,
 				9DB266C4279A1F3600ED6309 /* number1.svg in Resources */,
 				9DF9207E279F452300A60661 /* pin_support3.svg in Resources */,
 				9DF91FBA279F452300A60661 /* pin_drone.svg in Resources */,
@@ -3061,7 +3082,7 @@
 				9DB8645927A2068900641C8A /* incidentreport.svg in Resources */,
 				9DF920A4279F452300A60661 /* pin_mileage.svg in Resources */,
 				9DB864BA27A2072E00641C8A /* questionmark.svg in Resources */,
-				9DF91FD2279F452300A60661 /* pin_skull.svg in Resources */,
+				9DF91FD2279F452300A60661 /* pin_crossbones.svg in Resources */,
 				9DF91FF0279F452300A60661 /* pin_trail.svg in Resources */,
 				9DF91FBC279F452300A60661 /* pin_hazard2.svg in Resources */,
 				9DB8648727A206E300641C8A /* multipletimesheet.svg in Resources */,
@@ -3069,7 +3090,7 @@
 				9DB8645D27A2068900641C8A /* hazard2.svg in Resources */,
 				9DB8652D27A207A400641C8A /* wildflowers.svg in Resources */,
 				9DB8653127A207A400641C8A /* workingplan.svg in Resources */,
-				9DB864CC27A2072E00641C8A /* skull.svg in Resources */,
+				9DB864CC27A2072E00641C8A /* crossbones.svg in Resources */,
 				9DB8648927A206E300641C8A /* multipletrees.svg in Resources */,
 				9DB8651827A2079200641C8A /* trashcan.svg in Resources */,
 				9DB8652827A2079200641C8A /* trim.svg in Resources */,
@@ -3115,7 +3136,7 @@
 				9DB8646827A2069700641C8A /* info.svg in Resources */,
 				9DB864CE27A2072E00641C8A /* roaddamage.svg in Resources */,
 				9DB864C427A2072E00641C8A /* search.svg in Resources */,
-				9DF92094279F452300A60661 /* multipleplan.svg in Resources */,
+				9DF92094279F452300A60661 /* multipleplans.svg in Resources */,
 				9DFCD2A227A98B7A00F6A5DD /* pin_lightningbolt.svg in Resources */,
 				9DF92050279F452300A60661 /* pin_butterfly.svg in Resources */,
 				9DFCD29027A98ADC00F6A5DD /* pin_eye.svg in Resources */,
@@ -3135,13 +3156,14 @@
 				9DF92078279F452300A60661 /* pin_save.svg in Resources */,
 				9DB8648F27A206F100641C8A /* paperstack.svg in Resources */,
 				9DF92026279F452300A60661 /* pin_jobbriefing.svg in Resources */,
+				9DFCD2B527A9A3E500F6A5DD /* pin_mower.svg in Resources */,
 				9DF91FBE279F452300A60661 /* pin_download.svg in Resources */,
 				9DF92084279F452300A60661 /* pin_wildflowers.svg in Resources */,
 				9DB863F627A205DA00641C8A /* buckettruck.svg in Resources */,
 				9DF920B0279F452300A60661 /* pin_tree.svg in Resources */,
 				9DB8649827A206FF00641C8A /* personhardhat.svg in Resources */,
 				9DB8642427A2061E00641C8A /* coyote.svg in Resources */,
-				9DF92070279F452300A60661 /* pin_personinhardhat.svg in Resources */,
+				9DF92070279F452300A60661 /* pin_personhardhat.svg in Resources */,
 				9DB863C727A204C800641C8A /* number4.svg in Resources */,
 				9DB864C827A2072E00641C8A /* sidewalkdamage.svg in Resources */,
 				9DB8647227A206A200641C8A /* mileage.svg in Resources */,
@@ -3232,8 +3254,10 @@
 				9DF920AE279F452300A60661 /* pin_timesheet.svg in Resources */,
 				9DB8651627A2079200641C8A /* trafficlightissue.svg in Resources */,
 				9DB2679D279A1FF500ED6309 /* bargraph.svg in Resources */,
+				9DFCD2AC27A9A01100F6A5DD /* pin_waterdrop.svg in Resources */,
 				9DB8644A27A2067900641C8A /* genericdocument.svg in Resources */,
 				9DF92030279F452300A60661 /* pin_vehicleinspection.svg in Resources */,
+				9DFCD2B227A9A31A00F6A5DD /* mowing.svg in Resources */,
 				806B7CB9A4D34FA350A15EB4644A3D3A /* FieldNoteIcons-FieldNoteIcons in Resources */,
 				9DF9207A279F452300A60661 /* pin_multipletrees.svg in Resources */,
 				9DF9209A279F452300A60661 /* pin_questionmark.svg in Resources */,
@@ -3289,7 +3313,7 @@
 				9DF92034279F452300A60661 /* pin_secondarypole.svg in Resources */,
 				9DF91FF4279F452300A60661 /* pin_sidewalkdamage.svg in Resources */,
 				9DB26829279A1FF600ED6309 /* flame.svg in Resources */,
-				9DB863DB27A205A300641C8A /* assigningplantocrew.svg in Resources */,
+				9DB863DB27A205A300641C8A /* assigningplancrew.svg in Resources */,
 				9DB267EB279A1FF500ED6309 /* lightningbolt.svg in Resources */,
 				9DF920AA279F452300A60661 /* pin_arrowsignright.svg in Resources */,
 				9DF92052279F452300A60661 /* pin_tailgate.svg in Resources */,
@@ -3300,7 +3324,7 @@
 				9DF92096279F452300A60661 /* pin_mower.svg in Resources */,
 				9DB8641127A2060D00641C8A /* clockwithcalendar.svg in Resources */,
 				9DF9209C279F452300A60661 /* pin_brokenpipe.svg in Resources */,
-				9DF91FFC279F452300A60661 /* pin_jobbehaviorobservation.svg in Resources */,
+				9DF91FFC279F452300A60661 /* pin_binoculars.svg in Resources */,
 				9DB8653427A207AA00641C8A /* zoomtoextend.svg in Resources */,
 				9DF92080279F452300A60661 /* pin_vines.svg in Resources */,
 				9DF92020279F452300A60661 /* pin_propertyhome.svg in Resources */,
@@ -3336,6 +3360,7 @@
 				9DB2688B279A1FF600ED6309 /* calculator.svg in Resources */,
 				9DB8646127A2068900641C8A /* jobbriefing.svg in Resources */,
 				9DB864C227A2072E00641C8A /* plan.svg in Resources */,
+				9DFCD2B827A9A44A00F6A5DD /* pin_mowing.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3399,7 +3424,6 @@
 			files = (
 				644B49A44C58236400BB0C1CCC770FC5 /* FieldNoteIcons.swift in Sources */,
 				15F3FDD1641359FB71FD31C82F24DFF2 /* FieldNoteIcons-dummy.m in Sources */,
-				A655226335433529735937419D5CD69E /* mowing.svg in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
