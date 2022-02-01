@@ -91,19 +91,27 @@ public final class FieldNoteIcons {
             fatalError("Cannot access FieldNoteIcons.bundle!")
         }
         
+        let iconList = self.IconList()
         var matchingSVGName = ""
         
-        if fieldNoteIconsBundle.path(forResource: name, ofType: "svg") != nil {
-            matchingSVGName = name
-        } else if fieldNoteIconsBundle.path(forResource: name.lowercased(), ofType: "svg") != nil {
+        if iconList.contains(name.lowercased()) {
             matchingSVGName = name.lowercased()
-        } else if fieldNoteIconsBundle.path(forResource: name.capitalized, ofType: "svg") != nil {
-            matchingSVGName = name.capitalized
-        } else if fieldNoteIconsBundle.path(forResource: name.uppercased(), ofType: "svg") != nil {
-            matchingSVGName = name.uppercased()
         } else {
             return nil
         }
+        
+        //TODO: Figure out why this doesn't work.
+//        if fieldNoteIconsBundle.path(forResource: name, ofType: "svg") != nil {
+//            matchingSVGName = name
+//        } else if fieldNoteIconsBundle.path(forResource: name.lowercased(), ofType: "svg") != nil {
+//            matchingSVGName = name.lowercased()
+//        } else if fieldNoteIconsBundle.path(forResource: name.capitalized, ofType: "svg") != nil {
+//            matchingSVGName = name.capitalized
+//        } else if fieldNoteIconsBundle.path(forResource: name.uppercased(), ofType: "svg") != nil {
+//            matchingSVGName = name.uppercased()
+//        } else {
+//            return nil
+//        }
             
         guard let svgImage = SVGKImage(named: matchingSVGName, in: resourceBundle) else {
             return nil
