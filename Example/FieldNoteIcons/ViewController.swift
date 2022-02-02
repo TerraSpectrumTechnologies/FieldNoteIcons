@@ -28,7 +28,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     var houseColor = UIColor.black
     var iconImages: [IconImage] = []
-    let iconsNames = FieldNoteIcons.IconList().sorted()
+    let iconsNames = FieldNoteIcons.iconList().sorted()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,11 +53,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         iconImages.removeAll()
         for iconName in iconsNames {
             if showPinSwitch.isOn {
-                if let iconImage = FieldNoteIcons.PinIcon(name: iconName, size: CGSize(width: 100, height: 100), primaryColor: houseColor, secondaryColor: .white, tertiaryColor: .white, pinFillColor: .white) {
+                if let iconImage = FieldNoteIcons.pinIcon(name: iconName, size: CGSize(width: 100, height: 100), primaryColor: houseColor, secondaryColor: .white, tertiaryColor: .white, pinFillColor: .white) {
                     iconImages.append(IconImage(image: iconImage, name: iconName))
                 }
             } else {
-                if let iconImage = FieldNoteIcons.Icon(name: iconName, size: CGSize(width: 100, height: 100), primaryColor: houseColor, secondaryColor: .white, tertiaryColor: .white, pinFillColor: .white) {
+                if let iconImage = FieldNoteIcons.icon(name: iconName, size: CGSize(width: 100, height: 100), primaryColor: houseColor, secondaryColor: .white, tertiaryColor: .white, pinFillColor: .white) {
                     iconImages.append(IconImage(image: iconImage, name: iconName))
                 }
             }

@@ -20,7 +20,7 @@ public final class FieldNoteIcons {
     - Returns: A list of all available images by name
     */
     
-    public static func IconList() -> [String] {
+    public static func iconList() -> [String] {
         var iconList:[String] = []
         let fieldNoteIconsBundle = Bundle(for: Self.self)
         guard let resourceBundleURL = fieldNoteIconsBundle.url(forResource: "FieldNoteIcons", withExtension: "bundle") else {
@@ -49,81 +49,17 @@ public final class FieldNoteIcons {
     }
     
     /**
-     Gets a SVG Pin Icon Image
+     Checks if the library has an icon available
 
      - Parameters:
         - name: The name of the icon
-        - size: The requested size of the image
-        - primaryColorHex: The primary color as a hex value
-        - secondaryColorHex: The secondary color as a hex value
-        - tertiaryColorHex: The tertiary color as a hex value
-        - pinFillColorHex: The pin background fill color as a hex value
-
-     - Returns: A UIImage for the requested icon
-     */
-    
-    public static func PinIcon(name: String, size: CGSize, primaryColorHex: String, secondaryColorHex: String, tertiaryColorHex: String, pinFillColorHex: String) -> UIImage? {
-        return Icon(name: "pin_" + name, size: size, primaryColorHex: primaryColorHex, secondaryColorHex: secondaryColorHex, tertiaryColorHex: tertiaryColorHex, pinFillColorHex: pinFillColorHex)
-    }
-    
-    /**
-     Gets a SVG Pin Icon Image
-
-     - Parameters:
-        - name: The name of the icon
-        - size: The requested size of the image
-        - primaryColorHex: The primary color
-        - secondaryColorHex: The secondary color
-        - tertiaryColorHex: The tertiary color
-        - pinFillColorHex: The pin background fill color
-
-     - Returns: A UIImage for the requested icon
-     */
-    
-    public static func PinIcon(name: String, size: CGSize, primaryColor: UIColor, secondaryColor: UIColor, tertiaryColor: UIColor, pinFillColor: UIColor) -> UIImage? {
-        return Icon(name: "pin_" + name, size: size, primaryColor: primaryColor, secondaryColor: secondaryColor, tertiaryColor: tertiaryColor, pinFillColor: pinFillColor)
-    }
-    
-    /**
-     Gets a SVG Icon Image
-
-     - Parameters:
-        - name: The name of the icon
-        - size: The requested size of the image
-        - primaryColorHex: The primary color as a hex value
-        - secondaryColorHex: The secondary color as a hex value
-        - tertiaryColorHex: The tertiary color as a hex value
-        - pinFillColorHex: The pin background fill color as a hex value (Defaults to white)
-
-     - Returns: A UIImage for the requested icon
-     */
-    
-    public static func Icon(name: String, size: CGSize, primaryColorHex: String, secondaryColorHex: String, tertiaryColorHex: String, pinFillColorHex: String = "000000") -> UIImage? {
-        return self.Icon(name: name, size: size, primaryColor: colorWithHexString(hexString: primaryColorHex), secondaryColor: colorWithHexString(hexString: secondaryColorHex), tertiaryColor: colorWithHexString(hexString: tertiaryColorHex), pinFillColor: colorWithHexString(hexString: pinFillColorHex))
-    }
-    
-    /**
-     Gets a SVG Icon Image
-
-     - Parameters:
-        - name: The name of the icon
-        - size: The requested size of the image
-        - primaryColorHex: The primary color
-        - secondaryColorHex: The secondary color
-        - tertiaryColorHex: The tertiary color
-        - pinFillColorHex: The pin background fill color
-
-     - Returns: A UIImage for the requested icon
-     */
-    
-    public static func Icon(name: String, size: CGSize, primaryColor: UIColor, secondaryColor: UIColor, tertiaryColor: UIColor, pinFillColor: UIColor = .white) -> UIImage? {
-        let fieldNoteIconsBundle = Bundle(for: Self.self)
-        guard let resourceBundleURL = fieldNoteIconsBundle.url(forResource: "FieldNoteIcons", withExtension: "bundle") else {
-            fatalError("FieldNoteIcons.bundle not found!")
-        }
         
-        guard let resourceBundle = Bundle(url: resourceBundleURL) else {
-            fatalError("Cannot access FieldNoteIcons.bundle!")
+     - Returns: Bool indicating whether or not the icon exists
+     */
+    
+    public static func iconExists(name: String) -> Bool {
+        guard let resourceBundle = self.resourceBundle() else {
+            fatalError("Resource Bundle not found!")
         }
         
         let fileName = name.lowercased()
@@ -135,6 +71,84 @@ public final class FieldNoteIcons {
             print(error)
         }
         
+        return fileExists
+    }
+    
+    /**
+     Gets a SVG Pin Icon Image
+
+     - Parameters:
+        - name: The name of the icon
+        - size: The requested size of the image
+        - primaryColorHex: The primary color as a hex value
+        - secondaryColorHex: The secondary color as a hex value (Defaults to black)
+        - tertiaryColorHex: The tertiary color as a hex value (Defaults to black)
+        - pinFillColorHex: The pin background fill color as a hex value (Defaults to white)
+
+     - Returns: A UIImage for the requested icon
+     */
+    
+    public static func pinIcon(name: String, size: CGSize, primaryColorHex: String, secondaryColorHex: String = "000000", tertiaryColorHex: String = "000000", pinFillColorHex: String = "FFFFFF") -> UIImage? {
+        return icon(name: "pin_" + name, size: size, primaryColorHex: primaryColorHex, secondaryColorHex: secondaryColorHex, tertiaryColorHex: tertiaryColorHex, pinFillColorHex: pinFillColorHex)
+    }
+    
+    /**
+     Gets a SVG Pin Icon Image
+
+     - Parameters:
+        - name: The name of the icon
+        - size: The requested size of the image
+        - primaryColorHex: The primary color
+        - secondaryColorHex: The secondary color (Defaults to black)
+        - tertiaryColorHex: The tertiary color (Defaults to black)
+        - pinFillColorHex: The pin background fill color (Defaults to white)
+
+     - Returns: A UIImage for the requested icon
+     */
+    
+    public static func pinIcon(name: String, size: CGSize, primaryColor: UIColor, secondaryColor: UIColor = .black, tertiaryColor: UIColor = .black, pinFillColor: UIColor = .white) -> UIImage? {
+        return icon(name: "pin_" + name, size: size, primaryColor: primaryColor, secondaryColor: secondaryColor, tertiaryColor: tertiaryColor, pinFillColor: pinFillColor)
+    }
+    
+    /**
+     Gets a SVG Icon Image
+
+     - Parameters:
+        - name: The name of the icon
+        - size: The requested size of the image
+        - primaryColorHex: The primary color as a hex value
+        - secondaryColorHex: The secondary color as a hex value (Defaults to black)
+        - tertiaryColorHex: The tertiary color as a hex value (Defaults to black)
+        - pinFillColorHex: The pin background fill color as a hex value (Defaults to white)
+
+     - Returns: A UIImage for the requested icon
+     */
+    
+    public static func icon(name: String, size: CGSize, primaryColorHex: String, secondaryColorHex: String = "000000", tertiaryColorHex: String = "000000", pinFillColorHex: String = "FFFFFF") -> UIImage? {
+        return icon(name: name, size: size, primaryColor: colorWithHexString(hexString: primaryColorHex), secondaryColor: colorWithHexString(hexString: secondaryColorHex), tertiaryColor: colorWithHexString(hexString: tertiaryColorHex), pinFillColor: colorWithHexString(hexString: pinFillColorHex))
+    }
+    
+    /**
+     Gets a SVG Icon Image
+
+     - Parameters:
+        - name: The name of the icon
+        - size: The requested size of the image
+        - primaryColorHex: The primary color
+        - secondaryColorHex: The secondary color (Defaults to black)
+        - tertiaryColorHex: The tertiary color (Defaults to black)
+        - pinFillColorHex: The pin background fill color (Defaults to white)
+
+     - Returns: A UIImage for the requested icon
+     */
+    
+    public static func icon(name: String, size: CGSize, primaryColor: UIColor, secondaryColor: UIColor = .black, tertiaryColor: UIColor = .black, pinFillColor: UIColor = .white) -> UIImage? {
+        guard let resourceBundle = self.resourceBundle() else {
+            fatalError("Resource Bundle not found!")
+        }
+        
+        let fileName = name.lowercased()
+        let fileExists = iconExists(name: fileName)
         guard fileExists, let svgImage = SVGKImage(named: fileName, in: resourceBundle) else {
             return nil
         }
@@ -154,6 +168,19 @@ public final class FieldNoteIcons {
         }
         
         return svgImage.uiImage
+    }
+    
+    private static func resourceBundle() -> Bundle? {
+        let fieldNoteIconsBundle = Bundle(for: Self.self)
+        guard let resourceBundleURL = fieldNoteIconsBundle.url(forResource: "FieldNoteIcons", withExtension: "bundle") else {
+            fatalError("FieldNoteIcons.bundle not found!")
+        }
+        
+        guard let resourceBundle = Bundle(url: resourceBundleURL) else {
+            fatalError("Cannot access FieldNoteIcons.bundle!")
+        }
+        
+        return resourceBundle
     }
     
     private static func fillElementNodeList(nodeList: NodeList, svgImage: SVGKImage, primaryColor: UIColor, secondaryColor: UIColor, tertiaryColor: UIColor, pinFillColor: UIColor) {
