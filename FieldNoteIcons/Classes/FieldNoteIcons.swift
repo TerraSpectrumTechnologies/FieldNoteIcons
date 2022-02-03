@@ -31,14 +31,17 @@ public final class FieldNoteIcons {
             let contents = try FileManager.default.contentsOfDirectory(at: resourceBundleURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
             for content in contents {
                 let iconPathSplit = content.pathComponents.split(separator: "/").last
-                if let iconName = iconPathSplit?.last?.replacingOccurrences(of: ".svg", with: "") {
-                    let cleanedIconName = iconName.replacingOccurrences(of: "Pin_", with: "")
-                    if !iconList.contains(where: { name in
-                        name == cleanedIconName
-                    }) {
-                        iconList.append(cleanedIconName)
-                    }
-                    
+                let iconFullName = iconPathSplit?.last ?? ""
+                if !iconFullName.contains(".svg") {
+                    continue
+                }
+                
+                let iconName = iconFullName.replacingOccurrences(of: ".svg", with: "")
+                let cleanedIconName = iconName.replacingOccurrences(of: "Pin_", with: "")
+                if !iconList.contains(where: { name in
+                    name == cleanedIconName
+                }) {
+                    iconList.append(cleanedIconName)
                 }
             }
         } catch {
@@ -207,22 +210,7 @@ public final class FieldNoteIcons {
         }
     }
     
-    private static func imageWithBackground(image:UIImage, color: UIColor, opaque: Bool = true) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(image.size, opaque, image.scale)
-            
-        guard let ctx = UIGraphicsGetCurrentContext(), let cgImage = image.cgImage else { return image }
-        defer { UIGraphicsEndImageContext() }
-            
-        let rect = CGRect(origin: .zero, size: image.size)
-        ctx.setFillColor(color.cgColor)
-        ctx.fill(rect)
-        ctx.concatenate(CGAffineTransform(a: 1, b: 0, c: 0, d: -1, tx: 0, ty: image.size.height))
-        ctx.draw(cgImage, in: rect)
-            
-        return UIGraphicsGetImageFromCurrentImageContext() ?? image
-      }
-    
-    static private func colorWithHexString(hexString: String) -> UIColor {
+    static func colorWithHexString(hexString: String) -> UIColor {
         guard hexString.count == 6 else {
             return .white
         }
@@ -239,7 +227,7 @@ public final class FieldNoteIcons {
         return color
     }
                         
-    static private func colorComponentFrom(colorString: String, start: Int, length: Int) -> CGFloat {
+    static func colorComponentFrom(colorString: String, start: Int, length: Int) -> CGFloat {
         let startIndex = colorString.index(colorString.startIndex, offsetBy: start)
         let endIndex = colorString.index(startIndex, offsetBy: length)
         let subString = colorString[startIndex..<endIndex]
