@@ -211,13 +211,13 @@ public final class FieldNoteIcons {
     }
     
     static func colorWithHexString(hexString: String) -> UIColor {
-        guard hexString.count == 6 else {
+        var colorString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
+        colorString = colorString.replacingOccurrences(of: "#", with: "").uppercased()
+        
+        guard colorString.count == 6 else {
             return .white
         }
         
-        var colorString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
-        colorString = colorString.replacingOccurrences(of: "#", with: "").uppercased()
-
         let alpha: CGFloat = 1.0
         let red: CGFloat = self.colorComponentFrom(colorString: colorString, start: 0, length: 2)
         let green: CGFloat = self.colorComponentFrom(colorString: colorString, start: 2, length: 2)
