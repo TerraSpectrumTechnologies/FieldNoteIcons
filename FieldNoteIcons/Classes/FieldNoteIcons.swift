@@ -214,14 +214,17 @@ public final class FieldNoteIcons {
         var colorString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
         colorString = colorString.replacingOccurrences(of: "#", with: "").uppercased()
         
-        guard colorString.count == 6 else {
+        guard colorString.count <= 8 else {
             return .white
         }
         
-        let alpha: CGFloat = 1.0
+        var alpha: CGFloat = 1.0
         let red: CGFloat = self.colorComponentFrom(colorString: colorString, start: 0, length: 2)
         let green: CGFloat = self.colorComponentFrom(colorString: colorString, start: 2, length: 2)
         let blue: CGFloat = self.colorComponentFrom(colorString: colorString, start: 4, length: 2)
+        if colorString.count > 6 {
+            alpha = self.colorComponentFrom(colorString: colorString, start: 6, length: 2)
+        }
 
         let color = UIColor(red: red, green: green, blue: blue, alpha: alpha)
         return color
