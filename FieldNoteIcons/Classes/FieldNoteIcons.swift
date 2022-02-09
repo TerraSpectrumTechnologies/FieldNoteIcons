@@ -170,7 +170,7 @@ public final class FieldNoteIcons {
             fillElementNodeList(nodeList: nodeList, svgImage: svgImage, primaryColor: primaryColor, secondaryColor: secondaryColor, tertiaryColor: tertiaryColor, pinFillColor: pinFillColor)
         }
         
-        return svgImage.uiImage
+        return resize(image: svgImage.uiImage, to: size)
     }
     
     private static func resourceBundle() -> Bundle? {
@@ -209,6 +209,26 @@ public final class FieldNoteIcons {
             }
         }
     }
+    
+    
+    private static func resize(image: UIImage, to newSize: CGSize) -> UIImage {
+        return UIGraphicsImageRenderer(size: newSize).image { _ in
+            let hScale = newSize.height / image.size.height
+            let vScale = newSize.width / image.size.width
+            let scale = max(hScale, vScale) // scaleToFill
+            let resizeSize = CGSize(width: image.size.width*scale, height: image.size.height*scale)
+            var middle = CGPoint.zero
+            if resizeSize.width > newSize.width {
+                middle.x -= (resizeSize.width-newSize.width)/2.0
+            }
+            if resizeSize.height > newSize.height {
+                middle.y -= (resizeSize.height-newSize.height)/2.0
+            }
+            
+            return image.draw(in: CGRect(origin: middle, size: resizeSize))
+        }
+    }
+
     
     static func colorWithHexString(hexString: String) -> UIColor {
         var colorString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)

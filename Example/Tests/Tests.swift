@@ -55,7 +55,7 @@ class Tests: XCTestCase {
             let pinIcon = FieldNoteIcons.pinIcon(name: icon, size: CGSize(width: 40, height: 40), primaryColorHex: "000000")
             if pinIcon != nil {
                 gotPinIcon = true
-                return
+                break
             }
         }
         XCTAssertTrue(gotPinIcon)
@@ -77,5 +77,19 @@ class Tests: XCTestCase {
         self.measure() {
             _ = FieldNoteIcons.icon(name: "mower", size: CGSize(width: 40, height: 40), primaryColor: .black)
         }
+    }
+    
+    func testIconIsCorrectSize() {
+        let icons = FieldNoteIcons.iconList()
+        let iconSize = CGSize(width: 40, height: 40)
+        var correctSizedIcon: UIImage?
+        for icon in icons {
+            let pinIcon = FieldNoteIcons.pinIcon(name: icon, size: iconSize, primaryColorHex: "000000")
+            if pinIcon != nil {
+                correctSizedIcon = pinIcon
+                break
+            }
+        }
+        XCTAssertEqual(correctSizedIcon?.size, iconSize)
     }
 }
