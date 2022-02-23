@@ -713,8 +713,6 @@
 		9DF92093279F452300A60661 /* pin_exclamationpoint.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA6279F452300A60661 /* pin_exclamationpoint.svg */; };
 		9DF92094279F452300A60661 /* multipleplans.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA7279F452300A60661 /* multipleplans.svg */; };
 		9DF92095279F452300A60661 /* multipleplans.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA7279F452300A60661 /* multipleplans.svg */; };
-		9DF92096279F452300A60661 /* pin_mower.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA8279F452300A60661 /* pin_mower.svg */; };
-		9DF92097279F452300A60661 /* pin_mower.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA8279F452300A60661 /* pin_mower.svg */; };
 		9DF92098279F452300A60661 /* pin_roaddamage.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA9279F452300A60661 /* pin_roaddamage.svg */; };
 		9DF92099279F452300A60661 /* pin_roaddamage.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FA9279F452300A60661 /* pin_roaddamage.svg */; };
 		9DF9209A279F452300A60661 /* pin_questionmark.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF91FAA279F452300A60661 /* pin_questionmark.svg */; };
@@ -1481,7 +1479,7 @@
 		C0E2ED6D49B8C0176B97C4A8406ABDD7 /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
 		C15D7DEBED379F83B2E7B8F833D38302 /* SVGKSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSource.h; path = Source/SVGKSource.h; sourceTree = "<group>"; };
 		C217872E177CE637A6CF541D8694B638 /* SVGGradientStop.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGGradientStop.m; path = "Source/DOM classes/Unported or Partial DOM/SVGGradientStop.m"; sourceTree = "<group>"; };
-		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B681A75EC168E8AC3E01DD5BFC7C60 /* SVGElementInstance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElementInstance.h; path = "Source/DOM classes/SVG-DOM/SVGElementInstance.h"; sourceTree = "<group>"; };
 		C438CF39277A5FA884B1B845A03E7C3F /* CSSStyleRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSStyleRule.h; path = "Source/DOM classes/Core DOM/CSSStyleRule.h"; sourceTree = "<group>"; };
 		C457B87ACFB0561C01B5FFAD8C3C31EF /* SVGTitleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGTitleElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGTitleElement.m"; sourceTree = "<group>"; };
@@ -1490,7 +1488,7 @@
 		C749424D5E6387528D49FE15ED380EE1 /* SVGSwitchElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGSwitchElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGSwitchElement.m"; sourceTree = "<group>"; };
 		C77CA7AA6446013AA2A7A876B27BED87 /* SVGUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGUtils.m; path = Source/Utils/SVGUtils.m; sourceTree = "<group>"; };
 		C7E18A1176999AD2CD5CE023E15AE936 /* SVGKInlineResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKInlineResource.m; path = Source/Utils/SVGKInlineResource.m; sourceTree = "<group>"; };
-		C84E20E67F271277D844DC3CA5452F13 /* Pods-FieldNoteIcons_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FieldNoteIcons_Example"; path = Pods_FieldNoteIcons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84E20E67F271277D844DC3CA5452F13 /* Pods_FieldNoteIcons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FieldNoteIcons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97D73577CB6F56776B3D4B4B511DDCC /* SVGAngle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGAngle.m; path = "Source/DOM classes/SVG-DOM/SVGAngle.m"; sourceTree = "<group>"; };
 		CC17998A9AF9812BC0A8DA145DC67ACC /* NSData+NSInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+NSInputStream.m"; path = "Source/Foundation additions/NSData+NSInputStream.m"; sourceTree = "<group>"; };
 		CC2024C3EFB28A468E41954FC91BA63D /* FieldNoteIcons-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FieldNoteIcons-umbrella.h"; sourceTree = "<group>"; };
@@ -1524,7 +1522,7 @@
 		DF84B1AF554A522FC8C35AD9F0836D4C /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDMultiFormatter.h; sourceTree = "<group>"; };
 		DF9618CC19585AAD452473A2F725DD35 /* FieldNoteIcons-FieldNoteIcons */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "FieldNoteIcons-FieldNoteIcons"; path = FieldNoteIcons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDB7DAAE2EABB12BAADFB1E32F4CF64 /* SVGKParserPatternsAndGradients.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParserPatternsAndGradients.m; path = "Source/Parsers/Parser Extensions/SVGKParserPatternsAndGradients.m"; sourceTree = "<group>"; };
-		E042D09A9454F70DF0171F7CA8CBFF07 /* Pods-FieldNoteIcons_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FieldNoteIcons_Tests"; path = Pods_FieldNoteIcons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E042D09A9454F70DF0171F7CA8CBFF07 /* Pods_FieldNoteIcons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FieldNoteIcons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1545B1C11C53D58248195AAA338971A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E1662A7B81D08A38B9299F55821EDF57 /* SVGPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGPoint.m; path = "Source/DOM classes/SVG-DOM/SVGPoint.m"; sourceTree = "<group>"; };
 		E17D928D200D60F8C9B4156865F0A976 /* CDATASection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDATASection.h; path = "Source/DOM classes/Core DOM/CDATASection.h"; sourceTree = "<group>"; };
@@ -1556,7 +1554,7 @@
 		F5DBFD31F923FB495229DAD5A01EFFFB /* SVGKParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParser.m; path = Source/Parsers/SVGKParser.m; sourceTree = "<group>"; };
 		F6B7BE0BFB43297D3370A413005B1B9C /* SVGKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVGKit.release.xcconfig; sourceTree = "<group>"; };
 		F7338F9D6014E616BDAD24A302B7ADBF /* Attr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Attr.h; path = "Source/DOM classes/Core DOM/Attr.h"; sourceTree = "<group>"; };
-		F8437BE58881E63196CF1F80191B3E2F /* SVGKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVGKit; path = SVGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8437BE58881E63196CF1F80191B3E2F /* SVGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98BC8371BFDCF60A50352C4BD3FE024 /* Pods-FieldNoteIcons_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FieldNoteIcons_Tests-dummy.m"; sourceTree = "<group>"; };
 		FAA47E129F76EFA1393C4410A2D9D77B /* StyleSheetList+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "StyleSheetList+Mutable.h"; path = "Source/DOM classes/Core DOM/StyleSheetList+Mutable.h"; sourceTree = "<group>"; };
 		FB306DFDD818DDA9823D311B55AA7516 /* CALayer+RecursiveClone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+RecursiveClone.h"; path = "Source/QuartzCore additions/CALayer+RecursiveClone.h"; sourceTree = "<group>"; };
@@ -1774,12 +1772,12 @@
 		A62C40E5DCD55B8911DA3D0D713AB4BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack */,
+				C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */,
 				2A1824086871AD73FDC36C95AB5C3D97 /* FieldNoteIcons */,
 				DF9618CC19585AAD452473A2F725DD35 /* FieldNoteIcons-FieldNoteIcons */,
-				C84E20E67F271277D844DC3CA5452F13 /* Pods-FieldNoteIcons_Example */,
-				E042D09A9454F70DF0171F7CA8CBFF07 /* Pods-FieldNoteIcons_Tests */,
-				F8437BE58881E63196CF1F80191B3E2F /* SVGKit */,
+				C84E20E67F271277D844DC3CA5452F13 /* Pods_FieldNoteIcons_Example.framework */,
+				E042D09A9454F70DF0171F7CA8CBFF07 /* Pods_FieldNoteIcons_Tests.framework */,
+				F8437BE58881E63196CF1F80191B3E2F /* SVGKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2619,7 +2617,7 @@
 			);
 			name = "Pods-FieldNoteIcons_Tests";
 			productName = Pods_FieldNoteIcons_Tests;
-			productReference = E042D09A9454F70DF0171F7CA8CBFF07 /* Pods-FieldNoteIcons_Tests */;
+			productReference = E042D09A9454F70DF0171F7CA8CBFF07 /* Pods_FieldNoteIcons_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B537A1FD6BC67DF7FE8C2B34E5CE6F19 /* SVGKit */ = {
@@ -2638,7 +2636,7 @@
 			);
 			name = SVGKit;
 			productName = SVGKit;
-			productReference = F8437BE58881E63196CF1F80191B3E2F /* SVGKit */;
+			productReference = F8437BE58881E63196CF1F80191B3E2F /* SVGKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B6EE6BBE6FA9AF4C9AEC3736747097CE /* FieldNoteIcons-FieldNoteIcons */ = {
@@ -2693,7 +2691,7 @@
 			);
 			name = CocoaLumberjack;
 			productName = CocoaLumberjack;
-			productReference = C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack */;
+			productReference = C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FCB5C65FD2CC444C410F138C33DC5D6E /* Pods-FieldNoteIcons_Example */ = {
@@ -2714,7 +2712,7 @@
 			);
 			name = "Pods-FieldNoteIcons_Example";
 			productName = Pods_FieldNoteIcons_Example;
-			productReference = C84E20E67F271277D844DC3CA5452F13 /* Pods-FieldNoteIcons_Example */;
+			productReference = C84E20E67F271277D844DC3CA5452F13 /* Pods_FieldNoteIcons_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -2724,7 +2722,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3018,7 +3016,6 @@
 				9DB864B927A2072E00641C8A /* plancompleted.svg in Resources */,
 				9DB863E527A205B500641C8A /* letterb.svg in Resources */,
 				9DB8641F27A2061E00641C8A /* deer.svg in Resources */,
-				9DF92097279F452300A60661 /* pin_mower.svg in Resources */,
 				9DB8641227A2060D00641C8A /* clockwithcalendar.svg in Resources */,
 				9DF9209D279F452300A60661 /* pin_brokenpipe.svg in Resources */,
 				9DF91FFD279F452300A60661 /* pin_binoculars.svg in Resources */,
@@ -3321,7 +3318,6 @@
 				9DB864B827A2072E00641C8A /* plancompleted.svg in Resources */,
 				9DB863E427A205B500641C8A /* letterb.svg in Resources */,
 				9DB8641E27A2061E00641C8A /* deer.svg in Resources */,
-				9DF92096279F452300A60661 /* pin_mower.svg in Resources */,
 				9DB8641127A2060D00641C8A /* clockwithcalendar.svg in Resources */,
 				9DF9209C279F452300A60661 /* pin_brokenpipe.svg in Resources */,
 				9DF91FFC279F452300A60661 /* pin_binoculars.svg in Resources */,
@@ -3618,7 +3614,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SVGKit/SVGKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SVGKit/SVGKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SVGKit/SVGKit.modulemap";
 				PRODUCT_MODULE_NAME = SVGKit;
@@ -3687,7 +3683,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3715,7 +3711,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FieldNoteIcons_Tests/Pods-FieldNoteIcons_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FieldNoteIcons_Tests/Pods-FieldNoteIcons_Tests.modulemap";
@@ -3748,7 +3744,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SVGKit/SVGKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SVGKit/SVGKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SVGKit/SVGKit.modulemap";
 				PRODUCT_MODULE_NAME = SVGKit;
@@ -3778,7 +3774,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FieldNoteIcons_Example/Pods-FieldNoteIcons_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FieldNoteIcons_Example/Pods-FieldNoteIcons_Example.modulemap";
@@ -3826,7 +3822,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FieldNoteIcons_Example/Pods-FieldNoteIcons_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FieldNoteIcons_Example/Pods-FieldNoteIcons_Example.modulemap";
@@ -3859,7 +3855,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
 				PRODUCT_MODULE_NAME = CocoaLumberjack;
@@ -3890,7 +3886,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
 				PRODUCT_MODULE_NAME = CocoaLumberjack;
@@ -3952,7 +3948,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-FieldNoteIcons_Tests/Pods-FieldNoteIcons_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FieldNoteIcons_Tests/Pods-FieldNoteIcons_Tests.modulemap";
@@ -4019,7 +4015,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
