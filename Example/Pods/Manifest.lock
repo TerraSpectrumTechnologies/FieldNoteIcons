@@ -1,17 +1,20 @@
 PODS:
+  - AZSClient (0.2.6)
   - CocoaLumberjack (3.7.4):
     - CocoaLumberjack/Core (= 3.7.4)
   - CocoaLumberjack/Core (3.7.4)
-  - FieldNoteIcons (0.1.0):
+  - FieldNoteIcons (1.0.7):
     - SVGKit (~> 3.x)
   - SVGKit (3.0.0):
     - CocoaLumberjack (~> 3.0)
 
 DEPENDENCIES:
+  - AZSClient
   - FieldNoteIcons (from `../`)
 
 SPEC REPOS:
   trunk:
+    - AZSClient
     - CocoaLumberjack
     - SVGKit
 
@@ -20,10 +23,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AZSClient: efd576cabf56f97e38cb1b614739f4b0c1906392
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
-  FieldNoteIcons: 7d1989ec2a2b2ee5c3d83b19276dac7e2aef83a9
+  FieldNoteIcons: ff02f4c25753875a2634e5d14be4fe09b8845703
   SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
 
-PODFILE CHECKSUM: 4e24c2e75517e71d162174cc96856e5f78adab93
+PODFILE CHECKSUM: a28c6c1209e2b5e0362448eb826da5d13ec72820
 
 COCOAPODS: 1.11.2
