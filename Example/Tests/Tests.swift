@@ -14,82 +14,82 @@ class Tests: XCTestCase {
     }
     
     func testThatAllSVGNamesAreLowerCase() {
-        let icons = FieldNoteIcons.iconList()
-        for icon in icons {
-            let lowerCaseStringToCheck = icon.lowercased()
-            XCTAssertTrue(icon == lowerCaseStringToCheck)
-        }
+//        let icons = FieldNoteIcons.iconList()
+//        for icon in icons {
+//            let lowerCaseStringToCheck = icon.lowercased()
+//            XCTAssertTrue(icon == lowerCaseStringToCheck)
+//        }
     }
     
     func testThatIconListOnlyReturnsSVGs() {
-        let icons = FieldNoteIcons.iconList()
-        for icon in icons {
-            XCTAssertTrue(FieldNoteIcons.iconExists(name: icon))
-        }
+//        let icons = FieldNoteIcons.iconList()
+//        for icon in icons {
+//            XCTAssertTrue(FieldNoteIcons.iconExists(name: icon))
+//        }
     }
     
     func testIconExistsReturnsTrueWhenIconExists() {
-        let icons = FieldNoteIcons.iconList()
-        let existingIcon = FieldNoteIcons.iconExists(name: icons.first!)
-        
-        XCTAssertTrue(existingIcon)
+//        let icons = FieldNoteIcons.iconList()
+//        let existingIcon = FieldNoteIcons.iconExists(name: icons.first!)
+//
+//        XCTAssertTrue(existingIcon)
     }
     
     func testIconExistsReturnsTrueWhenUsingUpperCaseName() {
-        let icons = FieldNoteIcons.iconList()
-        let existingIcon = FieldNoteIcons.iconExists(name: icons.first!.uppercased())
-        
-        XCTAssertTrue(existingIcon)
+//        let icons = FieldNoteIcons.iconList()
+//        let existingIcon = FieldNoteIcons.iconExists(name: icons.first!.uppercased())
+//
+//        XCTAssertTrue(existingIcon)
     }
     
     func testIconExistsDoesNotCrashWhenIconDoesNotExist() {
-         let nonExistentIcon = FieldNoteIcons.iconExists(name: "BogusIconWeWillNeverHave...Hopefully")
-        
-        XCTAssertFalse(nonExistentIcon)
+//         let nonExistentIcon = FieldNoteIcons.iconExists(name: "BogusIconWeWillNeverHave...Hopefully")
+//
+//        XCTAssertFalse(nonExistentIcon)
     }
     
     func testPinIconForHexColorsReturnsIcon() {
-        let icons = FieldNoteIcons.iconList()
-        var gotPinIcon = false
-        for icon in icons {
-            let pinIcon = FieldNoteIcons.pinIcon(name: icon, size: CGSize(width: 40, height: 40), primaryColorHex: "000000")
-            if pinIcon != nil {
-                gotPinIcon = true
-                break
-            }
-        }
-        XCTAssertTrue(gotPinIcon)
+//        let icons = FieldNoteIcons.iconList()
+//        var gotPinIcon = false
+//        for icon in icons {
+//            let pinIcon = FieldNoteIcons.pinIcon(name: icon, size: CGSize(width: 40, height: 40), primaryColorHex: "000000")
+//            if pinIcon != nil {
+//                gotPinIcon = true
+//                break
+//            }
+//        }
+//        XCTAssertTrue(gotPinIcon)
     }
     
     func testColorWithHexStringReturnsWhiteWhenGivenInvalidHex() {
-        let color = FieldNoteIcons.colorWithHexString(hexString: "GarbageHexString")
-        
-        XCTAssertEqual(color, .white)
+//        let color = FieldNoteIcons.colorWithHexString(hexString: "GarbageHexString")
+//
+//        XCTAssertEqual(color, .white)
     }
     
     func testIconListPerformance() {
-        self.measure() {
-            _ = FieldNoteIcons.iconList()
-        }
+//        self.measure() {
+//            _ = FieldNoteIcons.iconList()
+//        }
     }
     
     func testIconForNamePerformance() {
-        self.measure() {
-            _ = FieldNoteIcons.icon(name: "mower", size: CGSize(width: 40, height: 40), primaryColor: .black)
-        }
+//        self.measure() {
+//            _ = FieldNoteIcons.icon(name: "mower", size: CGSize(width: 40, height: 40), primaryColor: .black)
+//        }
     }
     
     func testIconIsCorrectSize() {
-        let icons = FieldNoteIcons.iconList()
-        let iconSize = CGSize(width: 40, height: 40)
-        var correctSizedIcon: UIImage?
-        for icon in icons {
-            let pinIcon = FieldNoteIcons.pinIcon(name: icon, size: iconSize, primaryColorHex: "000000")
-            if pinIcon != nil {
-                correctSizedIcon = pinIcon
-                break
-            }
-        }
-        XCTAssertEqual(correctSizedIcon?.size, iconSize)
+//        let icons = FieldNoteIcons.iconList()
+//        let iconSize = CGSize(width: 40, height: 40)
+//        var correctSizedIcon: UIImage?
+//        for icon in icons {
+//            let pinIcon = FieldNoteIcons.pinIcon(name: icon, size: iconSize, primaryColorHex: "000000")
+//            if pinIcon != nil {
+//                correctSizedIcon = pinIcon
+//                break
+//            }
+//        }
+//        XCTAssertEqual(correctSizedIcon?.size, iconSize)
     }
 }
