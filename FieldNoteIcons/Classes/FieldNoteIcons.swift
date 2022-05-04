@@ -15,15 +15,33 @@ public final class FieldNoteIcons {
     private static let nodeTypes: [String] = ["path","rect","line","polygon","polyline","circle","ellipse"]
     
     /**
+      Gets a SVG Icon Image
+
+      - Parameters:
+         - name: The name of the icon
+         - size: The requested size of the image
+         - primaryColorHex: The primary color as a hex value
+         - secondaryColorHex: The secondary color as a hex value (Defaults to black)
+         - tertiaryColorHex: The tertiary color as a hex value (Defaults to black)
+         - pinFillColorHex: The pin background fill color as a hex value (Defaults to white)
+
+      - Returns: A UIImage for the requested icon
+      */
+
+     public static func icon(filePath: String, size: CGSize, primaryColorHex: String, secondaryColorHex: String = "000000", tertiaryColorHex: String = "000000", pinFillColorHex: String = "FFFFFF") -> UIImage? {
+         return icon(filePath: filePath, size: size, primaryColor: colorWithHexString(hexString: primaryColorHex), secondaryColor: colorWithHexString(hexString: secondaryColorHex), tertiaryColor: colorWithHexString(hexString: tertiaryColorHex), pinFillColor: colorWithHexString(hexString: pinFillColorHex))
+     }
+    
+    /**
      Gets a SVG Icon Image
 
      - Parameters:
         - filePath: The local file path for the image
         - size: The requested size of the image
-        - primaryColorHex: The primary color
-        - secondaryColorHex: The secondary color (Defaults to black)
-        - tertiaryColorHex: The tertiary color (Defaults to black)
-        - pinFillColorHex: The pin background fill color (Defaults to white)
+        - primaryColor: The primary color
+        - secondaryColor: The secondary color (Defaults to black)
+        - tertiaryColor: The tertiary color (Defaults to black)
+        - pinFillColor: The pin background fill color (Defaults to white)
 
      - Returns: A UIImage for the requested icon
      */
