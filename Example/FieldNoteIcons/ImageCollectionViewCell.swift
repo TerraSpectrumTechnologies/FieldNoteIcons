@@ -12,6 +12,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageNameLabel: UILabel!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
