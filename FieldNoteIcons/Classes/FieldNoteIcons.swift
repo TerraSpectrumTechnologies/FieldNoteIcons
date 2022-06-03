@@ -6,31 +6,13 @@
 //
 
 import Foundation
-import SVGKit
+import Macaw
+import SwiftUI
 import UIKit
 
 /// Field Note Icons
 public final class FieldNoteIcons {
-    
-    private static let nodeTypes: [String] = ["path","rect","line","polygon","polyline","circle","ellipse"]
-    
-    /**
-      Gets a SVG Icon Image
-
-      - Parameters:
-         - name: The name of the icon
-         - size: The requested size of the image
-         - primaryColorHex: The primary color as a hex value
-         - secondaryColorHex: The secondary color as a hex value (Defaults to black)
-         - tertiaryColorHex: The tertiary color as a hex value (Defaults to black)
-         - pinFillColorHex: The pin background fill color as a hex value (Defaults to white)
-
-      - Returns: A UIImage for the requested icon
-      */
-
-     public static func icon(filePath: String, size: CGSize, primaryColorHex: String, secondaryColorHex: String = "000000", tertiaryColorHex: String = "000000", pinFillColorHex: String = "FFFFFF") -> UIImage? {
-         return icon(filePath: filePath, size: size, primaryColor: colorWithHexString(hexString: primaryColorHex), secondaryColor: colorWithHexString(hexString: secondaryColorHex), tertiaryColor: colorWithHexString(hexString: tertiaryColorHex), pinFillColor: colorWithHexString(hexString: pinFillColorHex))
-     }
+    static var svgCache: NSCache<NSString, UIImage> = NSCache()
     
     /**
      Gets a SVG Icon Image
@@ -48,51 +30,91 @@ public final class FieldNoteIcons {
     
     public static func icon(filePath: String, size: CGSize, primaryColor: UIColor, secondaryColor: UIColor = .black, tertiaryColor: UIColor = .black, pinFillColor: UIColor = .white) -> UIImage? {
 
-        guard let svgImage = SVGKImage(contentsOfFile: filePath) else {
-            return nil
-        }
-
-        var nodeListArray: [NodeList] = []
-        
-        for nodeType in nodeTypes {
-            if let nodeElement = svgImage.domDocument.getElementsByTagName(nodeType) {
-                if nodeElement.length > 0 {
-                    nodeListArray.append(nodeElement)
-                }
-            }
-        }
-        
-        for nodeList in nodeListArray {
-            fillElementNodeList(nodeList: nodeList, svgImage: svgImage, primaryColor: primaryColor, secondaryColor: secondaryColor, tertiaryColor: tertiaryColor, pinFillColor: pinFillColor)
-        }
-        
-        return resize(image: svgImage.uiImage, to: size)
-    }
-
-    private static func fillElementNodeList(nodeList: NodeList, svgImage: SVGKImage, primaryColor: UIColor, secondaryColor: UIColor, tertiaryColor: UIColor, pinFillColor: UIColor) {
-        for number in 0..<(nodeList.length) {
-            if let nodeElement = nodeList.item(number) as? SVGElement {
-                if nodeElement.getAttribute("class") == "primary" {
-                    if let pathLayer = svgImage.layer(withIdentifier: nodeElement.identifier) as? CAShapeLayer {
-                        pathLayer.fillColor = primaryColor.cgColor
-                    }
-                } else if nodeElement.getAttribute("class") == "secondary" {
-                    if let pathLayer = svgImage.layer(withIdentifier: nodeElement.identifier) as? CAShapeLayer {
-                        pathLayer.fillColor = secondaryColor.cgColor
-                    }
-                } else if nodeElement.getAttribute("class") == "tertiary" {
-                    if let pathLayer = svgImage.layer(withIdentifier: nodeElement.identifier) as? CAShapeLayer {
-                        pathLayer.fillColor = tertiaryColor.cgColor
-                    }
-                } else if nodeElement.getAttribute("class") == "pinFill" {
-                    if let pathLayer = svgImage.layer(withIdentifier: nodeElement.identifier) as? CAShapeLayer {
-                        pathLayer.fillColor = pinFillColor.cgColor
-                    }
-                }
-            }
-        }
+        return icon(filePath: filePath, size: size, primaryColorHex: primaryColor.hexString ?? "000000", secondaryColorHex: secondaryColor.hexString ?? "000000", tertiaryColorHex: tertiaryColor.hexString ?? "000000", pinFillColorHex: pinFillColor.hexString ?? "000000")
     }
     
+    /**
+      Gets a SVG Icon Image
+
+      - Parameters:
+         - name: The name of the icon
+         - size: The requested size of the image
+         - primaryColorHex: The primary color as a hex value
+         - secondaryColorHex: The secondary color as a hex value (Defaults to black)
+         - tertiaryColorHex: The tertiary color as a hex value (Defaults to black)
+         - pinFillColorHex: The pin background fill color as a hex value (Defaults to white)
+
+      - Returns: A UIImage for the requested icon
+      */
+
+     public static func icon(filePath: String, size: CGSize, primaryColorHex: String, secondaryColorHex: String = "000000", tertiaryColorHex: String = "000000", pinFillColorHex: String = "FFFFFF") -> UIImage? {
+         
+         let styleMap = ["primary": primaryColorHex, "secondary": secondaryColorHex, "tertiary": tertiaryColorHex, "pinFillColor": pinFillColorHex]
+
+         if let svgString = try? NSString(contentsOfFile: filePath, encoding: String.Encoding.utf8.rawValue) {
+             let image = render(svgString: svgString as String, size: size, styleMap: styleMap)
+             return image
+         }
+
+         return nil
+     }
+    
+    
+    /**
+     Renders an SVG for a given string and size.
+     - Parameter svgString: The SVG string
+     - Parameter size: The size of the icon
+     - Parameter styleMap: The style map with CSS fill colors to replace (as hex value)
+     - Parameter contentMode: The mode how to fill available space
+     - Parameter useCache: `true` if the rendered image should be cached, otherwise `false`
+     - Returns: The rendered image
+     */
+
+    @objc public class func render(svgString: String,
+                                   size: CGSize,
+                                   styleMap: [String: String]? = nil,
+                                   contentMode: UIView.ContentMode = .scaleAspectFit,
+                                   useCache: Bool = true) -> UIImage? {
+        var svgStringToRender = svgString
+        if let styleMap = styleMap {
+            svgStringToRender = manipulateStyle(svgString: &svgStringToRender, styleMap: styleMap)
+        }
+
+        if useCache, let cachedResult = FieldNoteIcons.svgCache.object(
+            forKey: cacheKey(svgString: svgStringToRender, size: size)) {
+            return cachedResult.copy() as? UIImage
+        }
+
+        let node = try? SVGParser.parse(text: svgStringToRender)
+        let result = try? node?.toNativeImage(size: Size(w: size.width, h: size.height),
+                                              layout: .of(contentMode: contentMode)) ?? nil
+
+        if useCache, let result = result {
+            FieldNoteIcons.svgCache.setObject(result, forKey: cacheKey(svgString: svgStringToRender, size: size))
+        }
+
+        return result
+    }
+    
+    /**
+     Manipulates an SVG string for a given style map.
+     - Parameter svgString: The SVG string
+     - Parameter styleMap: The style map with CSS fill colors to replace (as hex value)
+     - Returns: The manipulated SVG string
+     */
+
+    private class func manipulateStyle(svgString: inout String, styleMap: [String: String]) -> String {
+        var result = svgString
+        styleMap.forEach { (key: String, value: String) in
+            let pattern = "\\.\(key)\\{(.*)fill:#[0-9,a-f,A-F]{6};\\}"
+            let fillStyle = ".\(key){fill:\(value);}"
+            result = result.replacingOccurrences(of: pattern,
+                                                 with: fillStyle,
+                                                 options: .regularExpression)
+        }
+
+        return result
+    }
     
     private static func resize(image: UIImage, to newSize: CGSize) -> UIImage {
         return UIGraphicsImageRenderer(size: newSize).image { _ in
@@ -146,5 +168,17 @@ public final class FieldNoteIcons {
         let hexFloat: CGFloat = CGFloat(hexComponent)
         let floatValue: CGFloat = CGFloat(hexFloat / 255.0)
         return floatValue
+    }
+    
+    /**
+     Returns a key to identify an image in the cache.
+     - Parameter svgString: The SVG string
+     - Parameter size: The size of the icon
+     - Returns: The key to identify an image in the cache
+     */
+
+    fileprivate class func cacheKey(svgString: String, size: CGSize) -> NSString {
+        "\(svgString.hashValue)_\(size.width)_\(size.height)" as NSString
+
     }
 }
