@@ -30,7 +30,7 @@ public final class FieldNoteIcons {
     
     public static func icon(filePath: String, size: CGSize, primaryColor: UIColor, secondaryColor: UIColor = .black, tertiaryColor: UIColor = .black, pinFillColor: UIColor = .white) -> UIImage? {
 
-        return icon(filePath: filePath, size: size, primaryColorHex: primaryColor.hexString ?? "000000", secondaryColorHex: secondaryColor.hexString ?? "000000", tertiaryColorHex: tertiaryColor.hexString ?? "000000", pinFillColorHex: pinFillColor.hexString ?? "000000")
+        return icon(filePath: filePath, size: size, primaryColorHex: self.hexStringWithColor(color: primaryColor), secondaryColorHex: self.hexStringWithColor(color: secondaryColor), tertiaryColorHex: self.hexStringWithColor(color: tertiaryColor), pinFillColorHex: self.hexStringWithColor(color: pinFillColor))
     }
     
     /**
@@ -168,6 +168,37 @@ public final class FieldNoteIcons {
         let hexFloat: CGFloat = CGFloat(hexComponent)
         let floatValue: CGFloat = CGFloat(hexFloat / 255.0)
         return floatValue
+    }
+    
+    private static func hexStringWithColor(color: UIColor) -> String {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+
+        let multiplier = CGFloat(255.999999)
+
+        guard color.getRed(&red, green: &green, blue: &blue, alpha: &alpha) else {
+            return "000000"
+        }
+
+        if alpha == 1.0 {
+            return String(
+                format: "#%02lX%02lX%02lX",
+                Int(red * multiplier),
+                Int(green * multiplier),
+                Int(blue * multiplier)
+            )
+        }
+        else {
+            return String(
+                format: "#%02lX%02lX%02lX%02lX",
+                Int(red * multiplier),
+                Int(green * multiplier),
+                Int(blue * multiplier),
+                Int(alpha * multiplier)
+            )
+        }
     }
     
     /**

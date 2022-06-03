@@ -350,7 +350,6 @@
 		9C8F374EF73542E869B6D586D3BEC651 /* NodeList.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DD531B8A4AF1BCE9511FA3BDEF4EE96 /* NodeList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C9F3ECE99AB26B8E3E5714C7F934D40 /* NodeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF6A58B68BE26D052E554E83D9B75F /* NodeRenderer.swift */; };
 		9D1439CFFC52D60B3153BB4CD7CE3EBF /* SVGKSourceNSData.h in Headers */ = {isa = PBXBuildFile; fileRef = 17F6479BD904FF0224EC6323F5A6FBB3 /* SVGKSourceNSData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D1E2C9E284A99EB00D17C53 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E2C9D284A99EB00D17C53 /* UIColor+Extensions.swift */; };
 		9D660F7952EC4FC52D9EFDAF65A67AE1 /* SVGKParserDOM.h in Headers */ = {isa = PBXBuildFile; fileRef = 273A968B17BF413E0745E31C9C434D8A /* SVGKParserDOM.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DAFD286872F2CAB33A73801E7E567A1 /* SVGKLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DCF1BC2A58D2C24533C376DE6B08D61 /* SVGKLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EB26441020F02C09A262011879566CF /* PathFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AA08E3C73BB907BBB3C679E782695 /* PathFunctions.swift */; };
@@ -1076,7 +1075,6 @@
 		9BCB425D8F506E7930B7EBCDA0E0B060 /* DocumentFragment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DocumentFragment.h; path = "Source/DOM classes/Core DOM/DocumentFragment.h"; sourceTree = "<group>"; };
 		9C26D29DB707E97FD95EACABB2E8C8FA /* AZSRetryPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSRetryPolicy.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSRetryPolicy.m"; sourceTree = "<group>"; };
 		9D0E37E9F555660B756D037AC32220F5 /* TinySVGTextAreaElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TinySVGTextAreaElement.h; path = "Source/DOM classes/Unported or Partial DOM/TinySVGTextAreaElement.h"; sourceTree = "<group>"; };
-		9D1E2C9D284A99EB00D17C53 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "Example/FieldNoteIcons/UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		9D667973C9BB3CFF5D8826E0F1818687 /* PanEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanEvent.swift; path = Source/events/PanEvent.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DB2EAF453A7BC27262C759CDE96FB3B /* AZSCloudAppendBlob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AZSCloudAppendBlob.m; path = "Lib/Azure Storage Client Library/Azure Storage Client Library/AZSCloudAppendBlob.m"; sourceTree = "<group>"; };
@@ -1890,7 +1888,6 @@
 			isa = PBXGroup;
 			children = (
 				E0DF0E1576A3B4B5A1B1FAAFE64EFB20 /* FieldNoteIcons.swift */,
-				9D1E2C9D284A99EB00D17C53 /* UIColor+Extensions.swift */,
 				9160BE411081AB0E5888D0AD016F2669 /* Pod */,
 				C746746AF0A92CDFC4E360C74B50E87A /* Support Files */,
 			);
@@ -2957,7 +2954,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				85FF16A58968590F6D0ACE23B0342CAC /* FieldNoteIcons.swift in Sources */,
-				9D1E2C9E284A99EB00D17C53 /* UIColor+Extensions.swift in Sources */,
 				65B51982284974F7E32D8DDCB56B10EE /* FieldNoteIcons-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
