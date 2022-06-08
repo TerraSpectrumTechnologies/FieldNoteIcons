@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -42,7 +42,7 @@
                                             <action selector="colorButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Ms-DF-eGE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2L-IN-LB9">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2L-IN-LB9">
                                         <rect key="frame" x="162" y="0.0" width="71.5" height="31"/>
                                         <color key="tintColor" systemColor="systemBlueColor"/>
                                         <state key="normal" title="Button"/>
@@ -51,17 +51,8 @@
                                             <action selector="colorButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sso-P7-1bZ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPY-mR-xxL">
-                                        <rect key="frame" x="233.5" y="0.0" width="53.5" height="31"/>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Red"/>
-                                        <connections>
-                                            <action selector="colorButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bMV-El-TpJ"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjs-h5-xJP">
-                                        <rect key="frame" x="287" y="0.0" width="72" height="31"/>
+                                        <rect key="frame" x="233.5" y="0.0" width="61.5" height="31"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Black"/>
@@ -69,10 +60,18 @@
                                             <action selector="colorButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jdC-1Z-z9y"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7S-BQ-TNo">
+                                        <rect key="frame" x="295" y="0.0" width="64" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Picker"/>
+                                        <connections>
+                                            <action selector="colorPickerButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JNu-IB-Sai"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2E-yc-Meb">
-                                <rect key="frame" x="16" y="71" width="343" height="31"/>
+                                <rect key="frame" x="16" y="55" width="343" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Hex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SY-4D-634">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="31"/>
@@ -116,19 +115,11 @@
                                     </switch>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7S-BQ-TNo">
-                                <rect key="frame" x="16" y="118" width="343" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Color Picker"/>
-                                <connections>
-                                    <action selector="colorPickerButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JNu-IB-Sai"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pf-Sa-fsD">
-                                <rect key="frame" x="16" y="165" width="343" height="486"/>
+                                <rect key="frame" x="16" y="118" width="343" height="533"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5b6-ca-LzH">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="486"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="533"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9ng-be-qrv">
                                             <size key="itemSize" width="100" height="100"/>
@@ -162,14 +153,11 @@
                         <constraints>
                             <constraint firstItem="0pf-Sa-fsD" firstAttribute="leading" secondItem="INy-s5-nSA" secondAttribute="leading" constant="16" id="1e1-xj-MN9"/>
                             <constraint firstItem="INy-s5-nSA" firstAttribute="bottom" secondItem="0pf-Sa-fsD" secondAttribute="bottom" constant="16" id="2WF-o9-15z"/>
-                            <constraint firstItem="e2E-yc-Meb" firstAttribute="top" secondItem="OEN-oa-QQq" secondAttribute="bottom" constant="32" id="4Wf-x3-aio"/>
+                            <constraint firstItem="e2E-yc-Meb" firstAttribute="top" secondItem="OEN-oa-QQq" secondAttribute="bottom" constant="16" id="4Wf-x3-aio"/>
                             <constraint firstItem="OEN-oa-QQq" firstAttribute="top" secondItem="INy-s5-nSA" secondAttribute="top" constant="8" id="IPA-T2-n7D"/>
                             <constraint firstItem="INy-s5-nSA" firstAttribute="trailing" secondItem="0pf-Sa-fsD" secondAttribute="trailing" constant="16" id="O5a-8y-xn8"/>
-                            <constraint firstItem="X7S-BQ-TNo" firstAttribute="top" secondItem="e2E-yc-Meb" secondAttribute="bottom" constant="16" id="Rdf-Ux-dCJ"/>
                             <constraint firstItem="INy-s5-nSA" firstAttribute="trailing" secondItem="e2E-yc-Meb" secondAttribute="trailing" constant="16" id="SNf-oo-vUr"/>
-                            <constraint firstItem="0pf-Sa-fsD" firstAttribute="top" secondItem="X7S-BQ-TNo" secondAttribute="bottom" constant="16" id="Ta4-qq-G6n"/>
-                            <constraint firstItem="X7S-BQ-TNo" firstAttribute="leading" secondItem="INy-s5-nSA" secondAttribute="leading" constant="16" id="Xgw-Od-RVW"/>
-                            <constraint firstItem="INy-s5-nSA" firstAttribute="trailing" secondItem="X7S-BQ-TNo" secondAttribute="trailing" constant="16" id="aC5-Q6-IbR"/>
+                            <constraint firstItem="0pf-Sa-fsD" firstAttribute="top" secondItem="e2E-yc-Meb" secondAttribute="bottom" constant="32" id="aRB-ch-hp6"/>
                             <constraint firstAttribute="trailing" secondItem="OEN-oa-QQq" secondAttribute="trailing" constant="8" id="afS-R2-CxF"/>
                             <constraint firstItem="e2E-yc-Meb" firstAttribute="leading" secondItem="INy-s5-nSA" secondAttribute="leading" constant="16" id="rjJ-3g-Bk5"/>
                             <constraint firstItem="OEN-oa-QQq" firstAttribute="leading" secondItem="INy-s5-nSA" secondAttribute="leading" constant="8" id="vdT-Yr-Tge"/>
@@ -183,7 +171,6 @@
                         <outlet property="greenButton" destination="OBz-3U-lun" id="rSB-dp-QuV"/>
                         <outlet property="imageCollectionView" destination="5b6-ca-LzH" id="6tf-OU-wZK"/>
                         <outlet property="orangeButton" destination="STb-6c-rUN" id="hFb-D1-tlN"/>
-                        <outlet property="redButton" destination="MPY-mR-xxL" id="jWX-hY-2kT"/>
                         <outlet property="showPinSwitch" destination="Zrz-P5-e5y" id="otn-QI-kO6"/>
                     </connections>
                 </viewController>
@@ -204,9 +191,6 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

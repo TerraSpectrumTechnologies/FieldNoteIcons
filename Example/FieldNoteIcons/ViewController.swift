@@ -104,6 +104,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                                         if let azsBlob = blob as? AZSCloudBlob {
                                             let iconName = azsBlob.blobName.replacingOccurrences(of: ".svg", with: "")
                                             let iconPath = iconsDirectory.appendingPathComponent(azsBlob.blobName)
+                                            try? FileManager.default.removeItem(at: iconPath)
                                             azsBlob.downloadToFile(with: iconPath, append: true) { error in
                                                 if error == nil {
                                                     if azsBlob.blobName.contains("pin_") {
