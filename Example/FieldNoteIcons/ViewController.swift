@@ -59,33 +59,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             URLSession.shared.dataTask(with: getAllBlobsRequest) { data, response, error in
                 if error == nil {
                     if let data = data {
-                        let list = String(data: data, encoding: .utf8)
                         do {
-//                                let listArray = try? JSONSerialization.jsonObject(with: data, options: .allowFragments)
                             let parser = XMLParser(data: data)
                             parser.delegate = self
                             parser.parse()
                             print("Success")
                         }
-                        
-                        
                     }
                 } else {
                     print("Error: \(String(describing: error))")
                 }
             }.resume()
-        }
-        
-        
-        let urlString = "https://tsticons.blob.core.windows.net/?comp=list"
-        if let url = URL(string: urlString) {
-            let defaultSession = URLSession(configuration: .default)
-   
-            let dataTask = defaultSession.dataTask(with: url, completionHandler: { data, response, error in
-                print("stop")
-            })
-            
-            dataTask.resume()
         }
           
 //        do {
