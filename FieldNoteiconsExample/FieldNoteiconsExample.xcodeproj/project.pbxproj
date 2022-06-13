@@ -13,10 +13,10 @@
 		9D74A1F828529FC400C43A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D74A1F628529FC400C43A8D /* LaunchScreen.storyboard */; };
 		9D74A2002852A0A100C43A8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D74A1FF2852A0A100C43A8D /* Main.storyboard */; };
 		9D74A2022852A0B000C43A8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D74A2012852A0B000C43A8D /* ViewController.swift */; };
-		9D77A88C2853A91F000B3D78 /* FieldNoteIcons in Frameworks */ = {isa = PBXBuildFile; productRef = 9D77A88B2853A91F000B3D78 /* FieldNoteIcons */; };
 		9D77A88E2853A970000B3D78 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D77A88D2853A970000B3D78 /* UIColor+Extensions.swift */; };
 		9D77A8912853C747000B3D78 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D77A88F2853C747000B3D78 /* ImageCollectionViewCell.swift */; };
 		9D77A8922853C747000B3D78 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D77A8902853C747000B3D78 /* ImageCollectionViewCell.xib */; };
+		9D814EF32857776F00EA5FF0 /* FieldNoteIcons in Frameworks */ = {isa = PBXBuildFile; productRef = 9D814EF22857776F00EA5FF0 /* FieldNoteIcons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		9D74A1F928529FC400C43A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D74A1FF2852A0A100C43A8D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9D74A2012852A0B000C43A8D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9D74A203285399A400C43A8D /* FieldNoteIcons */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FieldNoteIcons; sourceTree = "<group>"; };
 		9D77A88D2853A970000B3D78 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		9D77A88F2853C747000B3D78 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		9D77A8902853C747000B3D78 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		9D814EF12857774900EA5FF0 /* FieldNoteIcons */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FieldNoteIcons; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D77A88C2853A91F000B3D78 /* FieldNoteIcons in Frameworks */,
+				9D814EF32857776F00EA5FF0 /* FieldNoteIcons in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,8 +49,8 @@
 		9D74A1DF28529FC200C43A8D = {
 			isa = PBXGroup;
 			children = (
+				9D814EF02857774900EA5FF0 /* Packages */,
 				9D74A1EA28529FC200C43A8D /* FieldNoteiconsExample */,
-				9D74A203285399A400C43A8D /* FieldNoteIcons */,
 				9D74A1E928529FC200C43A8D /* Products */,
 				9D77A88A2853A91F000B3D78 /* Frameworks */,
 			);
@@ -88,6 +88,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9D814EF02857774900EA5FF0 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9D814EF12857774900EA5FF0 /* FieldNoteIcons */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,7 +113,7 @@
 			);
 			name = FieldNoteiconsExample;
 			packageProductDependencies = (
-				9D77A88B2853A91F000B3D78 /* FieldNoteIcons */,
+				9D814EF22857776F00EA5FF0 /* FieldNoteIcons */,
 			);
 			productName = FieldNoteiconsExample;
 			productReference = 9D74A1E828529FC200C43A8D /* FieldNoteiconsExample.app */;
@@ -383,7 +391,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9D77A88B2853A91F000B3D78 /* FieldNoteIcons */ = {
+		9D814EF22857776F00EA5FF0 /* FieldNoteIcons */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FieldNoteIcons;
 		};
