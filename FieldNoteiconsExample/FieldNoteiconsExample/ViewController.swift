@@ -38,14 +38,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     private static var mediaStorageURL = URL(string: "https://fieldnotemedia.blob.core.windows.net")
     private var mediaStorageName = "fieldnotemedia"
     private var mediaAccountName = "8914ebe2-e960-4d08-a3fc-b703dd13ac05"
-    private let iconBlobDirectory = "https://tsticons.blob.core.windows.net/icons/"
+    private var container = "icons"
+//    private var container = "iconstest"
+    private var iconBlobDirectory = ""
     
     var houseColor = UIColor.black
     var iconImages: [IconImage] = []
     var pinIconImages: [IconImage] = []
     var iconsNames = [String]()
     let flowLayout = UICollectionViewFlowLayout()
-//    var continuationToken: AZSContinuationToken?
     let fileManager = FileManager.default
     
     override func viewDidLoad() {
@@ -54,7 +55,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         setupCollectionView()
         imageCollectionView.register(UINib(nibName: "ImageCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "ImageCollectionViewCell")
         
-        if let getAllURL = URL(string: "https://tsticons.blob.core.windows.net/icons?restype=container&comp=list") {
+        iconBlobDirectory = "https://tsticons.blob.core.windows.net/\(container)/"
+        
+        if let getAllURL = URL(string: "https://tsticons.blob.core.windows.net/\(container)?restype=container&comp=list") {
             let getAllBlobsRequest = URLRequest(url: getAllURL)
             URLSession.shared.dataTask(with: getAllBlobsRequest) { data, response, error in
                 if error == nil {
@@ -71,94 +74,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 }
             }.resume()
         }
-          
-//        do {
-//            let credentials = AZSStorageCredentials(accountName: storageName, accountKey: accountKey)
-//            let mediaCredentials = AZSStorageCredentials(accountName: mediaStorageName, accountKey: mediaAccountKey)
-//            let account = try AZSCloudStorageAccount(credentials: credentials, useHttps: true)
-//            let mediaAccount = try AZSCloudStorageAccount(credentials: mediaCredentials, useHttps: true)
-//            let client = account.getBlobClient()
-//            let mediaClient = mediaAccount.getBlobClient()
-//            let container = client.containerReference(fromName: "icons")
-//            let mediaContainer = mediaClient.containerReference(fromName: mediaAccountName)
-//            mediaContainer.createContainerIfNotExists { error, created in
-//
-//            }
-//
-//            let iconsDirectory = iconsDirectoryPath()
-//            container.createContainerIfNotExists { error, created in
-//                if error == nil {
-//                    let blobListingDetails = AZSBlobListingDetails(rawValue: 0)
-//                    container.listBlobsSegmented(with: self.continuationToken, prefix: nil, useFlatBlobListing: true, blobListingDetails: blobListingDetails, maxResults: 0) { error, resultSegment in
-//                        if error == nil {
-//                            if let blobs = resultSegment?.blobs {
-//                                blobs.forEach { blob in
-//                                    if let azsBlob = blob as? AZSCloudBlob {
-//                                        let iconName = azsBlob.blobName.replacingOccurrences(of: ".svg", with: "")
-//                                        if iconName.contains("pin_") {
-//                                            self.pinIconImages.append(IconImage(image: nil, name: iconName))
-//                                        } else {
-//                                            self.iconImages.append(IconImage(image: nil, name: iconName))
-//                                        }
-//                                    }
-//                                }
-                                
-//                                DispatchQueue.main.async {
-//                                    self.imageCollectionView.reloadData()
-//                                }
-//
-//                                for blob in blobs {
-//                                    do {
-//                                        if let azsBlob = blob as? AZSCloudBlob {
-//                                            let iconName = azsBlob.blobName.replacingOccurrences(of: ".svg", with: "")
-//                                            let iconPath = iconsDirectory.appendingPathComponent(azsBlob.blobName)
-//                                            try? FileManager.default.removeItem(at: iconPath)
-//                                            azsBlob.downloadToFile(with: iconPath, append: true) { error in
-//                                                if error == nil {
-//                                                    if azsBlob.blobName.contains("pin_") {
-//                                                        let iconImage = self.pinIconImages.filter { iconImage in
-//                                                            return iconImage.name == iconName
-//                                                        }.first
-//                                                        let iconFilePath = self.iconsDirectoryPath().appendingPathComponent(iconImage?.name.appending(".svg") ?? "")
-//                                                        iconImage?.image = FieldNoteIcons.icon(filePath: iconFilePath.path, size: self.flowLayout.itemSize, primaryColorHex: self.houseColor.hexString ?? "000000", secondaryColorHex: UIColor.white.hexString ?? "000000", tertiaryColorHex: UIColor.white.hexString ?? "000000", pinFillColorHex: UIColor.white.hexString ?? "000000")
-//                                                        DispatchQueue.main.async {
-//                                                            if self.showPinSwitch.isOn {
-//                                                                self.imageCollectionView.reloadData()
-//                                                            }
-//                                                        }
-//                                                    } else {
-//                                                        let iconImage = self.iconImages.filter { iconImage in
-//                                                            return iconImage.name == iconName
-//                                                        }.first
-//                                                        let iconFilePath = self.iconsDirectoryPath().appendingPathComponent(iconImage?.name.appending(".svg") ?? "")
-//                                                        iconImage?.image = FieldNoteIcons.icon(filePath: iconFilePath.path, size: self.flowLayout.itemSize, primaryColorHex: self.houseColor.hexString ?? "000000", secondaryColorHex: UIColor.white.hexString ?? "000000", tertiaryColorHex: UIColor.white.hexString ?? "000000", pinFillColorHex: UIColor.white.hexString ?? "000000")
-//                                                        DispatchQueue.main.async {
-//                                                            if !self.showPinSwitch.isOn {
-//                                                                self.imageCollectionView.reloadData()
-//                                                            }
-//                                                        }
-//                                                    }
-//                                                }
-//                                            }
-//                                        }
-//                                    }
-//                                }
-//                            }
-
-//                            self.continuationToken = resultSegment?.continuationToken
-//                        }
-//                        print("Stop")
-//                    }
-//                } else {
-//                    print("Error: \(String(describing: error))")
-//                }
-//            }
-            
-
-//        } catch {
-//            print("Error")
-//        }
-        
     }
 
     
@@ -184,6 +99,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                     if error == nil {
                         do {
                             if let tempURL = tempURL {
+                                if iconName.contains("coffee") {
+                                    print("")
+                                }
                                 if FileManager.default.fileExists(atPath: localIconPath.path) {
                                     try FileManager.default.removeItem(at: localIconPath)
                                 }
@@ -206,6 +124,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                                     }.first
                                     let iconFilePath = self.iconsDirectoryPath().appendingPathComponent(iconImage?.name.appending(".svg") ?? "")
                                     iconImage?.image = FieldNoteIcons.icon(filePath: iconFilePath.path, size: self.flowLayout.itemSize, primaryColorHex: self.houseColor.hexString ?? "000000", secondaryColorHex: UIColor.white.hexString ?? "000000", tertiaryColorHex: UIColor.white.hexString ?? "000000", pinFillColorHex: UIColor.white.hexString ?? "000000")
+//                                        let iconContents = try NSString(contentsOfFile: iconFilePath.path, encoding: String.Encoding.utf8.rawValue)
+//                                        print("Coffee: \(iconContents)")
+                                    
                                     DispatchQueue.main.async {
                                         if !self.showPinSwitch.isOn {
                                             self.imageCollectionView.reloadData()
@@ -373,7 +294,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             cell.imageView.isHidden = true
         }
         
-        cell.imageNameLabel.text = iconImage.name
+        cell.imageNameLabel.text = iconImage.name.replacingOccurrences(of: "pin_", with: "")
         
         return cell
     }
