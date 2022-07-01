@@ -227,7 +227,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         picker.selectedColor = houseColor
         picker.delegate = self
 
-        // Presenting the Color Picker
         self.present(picker, animated: true, completion: nil)
     }
     
